@@ -1,37 +1,101 @@
-.social li{
+ul {
+    margin: 0;
+}
+
+.social li {
     display: inline;
     padding: 3px;
 }
-.community li{
+
+.community li {
     display: inline;
     color: white;
     padding: 3px;
 }
-.social li i{
+
+.social li i {
     color: white;
     font-size: 20px;
 }
-.fCon{
+
+.fCon {
     background: black;
+    height: 48px;
 }
-.logo{
+
+.logo {
     width: 160;
     height: 40px;
 }
-.scNav{
+
+.scNav {
     height: 90px;
 }
-.logoDiv{
+
+.logoDiv {
     margin-left: -28px;
 }
-.search{
+
+.search {
     border: 0;
     outline: none;
+    width: 80%;
     background: #eaeaea none repeat scroll 0 0;
-    border-radius: 6px;  
+    border-radius: 6px;
     height: 40px;
+    float: left;
 }
-.srcButton{
+
+.srcButton {
     background: #eaeaea none repeat scroll 0 0;
     border: none;
+    height: 40px;
+    margin-left: -3px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.mainNav li {
+    display: inline;
+    padding: 10px;
+}
+
+.mainNav li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.active{
+    border-bottom: linear-gradient(to right, #fbbd61, #ec7532) !important;
+}
+
+.mainNav li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    transition: width .3s;
+}
+
+.mainNav li a:hover::after{
+    width: 100%;
+}
+
+.open1>.dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.dropdown-menu {
+    display: inline;
+    opacity: .3;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,51 +10,70 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
         <div class="container-fluid">
-           <div class="row fCon">
-               <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
-                   <ul class="social">
-                    <li><a><i class="fab fa-facebook-square"></i></a> </li>
-                    <li><a><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a><i class="fab fa-google-plus-square"></i></a></li>
-                    <li><a><i class="fab fa-linkedin"></i></a></li>
-                    <li><a><i class="fab fa-pinterest-square"></i></a></li>
-                </ul>
-            </div>
-               <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+            <div class="row fCon">
+                <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+                    <ul class="social">
+                        <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                        <li><a><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a><i class="fab fa-linkedin"></i></a></li>
+                        <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
                     <ul class="community">
-                         <li>Community</li>
-                         <li>FAQ's</li>
-                         <li>Help</li>
-                         <li>Login</li>
-                         <li>Register</li>
-                     </ul>
-                    </div>
-               
-           </div>
-           <div class="row scNav d-flex align-items-center">
-               <div class="col-md-2"></div>
-               <div class="col-md-2 d-flex justify-content-end logoDiv">
-                   <a href="#">
+                        <li>Community</li>
+                        <li>FAQ's</li>
+                        <li>Help</li>
+                        <li>Login</li>
+                        <li>Register</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row scNav d-flex align-items-center">
+                <div class="col-md-2 col col-sm-2 col-2"></div>
+                <div class="col-md-2 col-sm-2 col-2 d-flex justify-content-end logoDiv">
+                    <a href="#">
                         <img src="img/logo.png" class="logo">
                     </a>
-               </div>
-               <div class="col-md-2">
-                   <form>
-                       <input type="text" placeholder="Search.." class="search">
-                       <button type="submit" class="srcButton"><i class="fas fa-search"></i></button>
-                   </form>
-               </div>
-           </div>
-    </div>
-            </header>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+                </div>
+                <div class="col-md-3 col-sm-3 col-3">
+                    <form>
+                        <input type="text" placeholder="Search.." class="search">
+                        <button type="submit" class="srcButton"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-5 col-5">
+                    <ul class="mainNav">
+                        <li> <a href="#" class="active">Home</a> </li>
+                        <li class="dropdown"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle"
+                                role="button">Pages</a>
+                            <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Pricing</a></li> <br>
+                                <li><a href="#">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Show</a></li>
+                        <li><a href="#">Celebrities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
