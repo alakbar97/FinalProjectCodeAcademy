@@ -1,0 +1,26 @@
+.social li{
+    display: inline;
+    padding: 3px;
+}
+.community li{
+    display: inline;
+    color: white;
+    padding: 3px;
+}
+.social li i{
+    color: white;
+    font-size: 20px;
+}
+.fCon{
+    background: black;
+}
+.logo{
+    width: 160;
+    height: 40px;
+}
+.scNav{
+    height: 90px;
+}
+.logoDiv{
+    margin-left: -28px;
+}
