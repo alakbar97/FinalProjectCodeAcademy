@@ -135,31 +135,36 @@ ul {
     height: 500px;
 }
 
-#carouselExampleIndicators::before {
-    left: 0;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    content: "";
-    border-top: 65px solid transparent;
-    border-left: 950px solid #fff;
+@media screen and (min-width: 970px) {
+    #carouselExampleIndicators::before {
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        content: "";
+        border-top: 65px solid transparent;
+        border-left: 950px solid #fff;
+    }
+
+    #carouselExampleIndicators::after {
+        right: 0;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        content: "";
+        border-top: 65px solid transparent;
+        border-right: 950px solid #fff;
+    }
 }
 
-#carouselExampleIndicators::after {
-    right: 0;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    content: "";
-    border-top: 65px solid transparent;
-    border-right: 950px solid #fff;
-}
-.tpm{
+.tpm {
     font-size: 30px;
 }
-.tpm em{
+
+.tpm em {
     color: #ec7532;
 }
+
 .tpm::before {
     left: 0;
     position: absolute;
