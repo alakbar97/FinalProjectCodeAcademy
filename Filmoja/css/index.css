@@ -1,3 +1,7 @@
+/* .container-fluid{
+    margin: 0;
+    padding: 0;
+} */
 ul {
     margin: 0;
 }
@@ -183,4 +187,17 @@ ul {
     height: 20px;
     width: 4px;
     background: #ec7532;
+}
+.card img{
+    height: 250px;
+}
+.socialactivities li{
+    display: inline;
+}
+.socialactivities li i{
+    color: #ec7532;
+}
+.socialactivities li a{
+    text-decoration: none;
+    color: #111;
 }
