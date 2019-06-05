@@ -65,11 +65,12 @@ ul {
     text-decoration: none;
     display: inline-block;
 }
-.active{
+
+.active {
     border-bottom: linear-gradient(to right, #fbbd61, #ec7532) !important;
 }
 
-.mainNav li a::after{
+.mainNav li a::after {
     content: '';
     display: block;
     width: 0;
@@ -78,7 +79,7 @@ ul {
     transition: width .3s;
 }
 
-.mainNav li a:hover::after{
+.mainNav li a:hover::after {
     width: 100%;
 }
 
@@ -98,4 +99,83 @@ ul {
     -webkit-transform: scale(1, 0);
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
+}
+
+#carouselExampleIndicators,
+.carousel-inner,
+.carousel-item,
+.carousel-inner img {
+    height: 620px;
+}
+
+.carousel-caption>* {
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.carousel-caption {
+    top: 32%;
+}
+
+.wtchCar {
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    border: none;
+    border-radius: 10px;
+    height: 47px;
+    width: 160px;
+    color: white;
+}
+
+.arrow {
+    opacity: 0 !important;
+}
+
+.modal-content {
+    width: 900px;
+    height: 500px;
+}
+
+#carouselExampleIndicators::before {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    content: "";
+    border-top: 65px solid transparent;
+    border-left: 950px solid #fff;
+}
+
+#carouselExampleIndicators::after {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    content: "";
+    border-top: 65px solid transparent;
+    border-right: 950px solid #fff;
+}
+.tpm{
+    font-size: 30px;
+}
+.tpm em{
+    color: #ec7532;
+}
+.tpm::before {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 4px;
+    background: #111;
+    content: "";
+}
+
+.tpm::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    height: 20px;
+    width: 4px;
+    background: #ec7532;
 }

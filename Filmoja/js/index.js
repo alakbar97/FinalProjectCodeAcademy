@@ -9,22 +9,37 @@ $(function () {
             $(this).toggleClass('open1');
         });
 });
+
+
+
+
+ $(".arrow").hover(
+    function(){
+     $(this).addClass("animated fadeInLeft").css("opacity","1");
+ })
+
+
+ 
+
+ $("#exampleModal").on('hidden.bs.modal', function (e) {
+    $("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
+});
+
+
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:1
+            items:3
         },
         1000:{
-            items:1
+            items:5
         }
     }
 })
