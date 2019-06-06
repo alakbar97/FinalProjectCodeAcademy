@@ -134,6 +134,10 @@ ul {
     opacity: 0 !important;
 }
 
+.modal-body{
+    padding: 0;
+}
+
 .modal-content {
     width: 900px;
     height: 500px;
@@ -188,6 +192,9 @@ ul {
     width: 4px;
     background: #ec7532;
 }
+.card{
+    border:none;
+}
 .card img{
     height: 250px;
 }
@@ -200,4 +207,24 @@ ul {
 .socialactivities li a{
     text-decoration: none;
     color: #111;
+}
+.review{
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    border: none;
+    height: 20px;
+    border-radius: 5px;
+}
+.review i{
+    color: white !important;
+}
+.review small{
+    font-size: 15px;
+    color: white;
+}
+[class^=imghvr-],[class^=imghvr-] figcaption,[class^=imghvr-shutter-out-]:before {
+    background: linear-gradient(to right, #fbbd61, #ec7532) !important;
+}
+.fa-play-circle{
+font-size: 30px;
+outline: none;
 }
