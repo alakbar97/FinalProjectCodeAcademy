@@ -409,7 +409,11 @@ ul {
     color: #111;
     font-size: 30px;
 }
-
+.nwtm span{
+    font-family: cursive;
+    font-weight: 500;
+    color: #ec7532;
+}
 .itemImg img {
     height: 380px !important;
 }
@@ -493,4 +497,33 @@ ul {
 .fa-long-arrow-alt-down{
     font-size: 24px;
     color: white;
+}
+
+.ltnws::before {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 4px;
+    background: #111;
+    content: "";
+}
+
+.ltnws::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    height: 20px;
+    width: 4px;
+    background: #ec7532;
+}
+.ltnws{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    color: #111;
+    font-size: 30px;
+}
+.ltnws strong{
+    font-family: monospace;
 }
