@@ -112,13 +112,37 @@ ul {
     height: 620px;
 }
 
+.carousel-inner h4{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+.carousel-inner h2{
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    line-height: 60px;
+}
+.carousel-inner p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
 .carousel-caption>* {
     animation-delay: 1s;
     animation-fill-mode: both;
 }
 
 .carousel-caption {
-    top: 32%;
+    top: 29%;
 }
 
 .wtchCar {
@@ -166,6 +190,10 @@ ul {
 }
 
 .tpm {
+    font-family: "Lucida Console", Monaco, monospace;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #111;
     font-size: 30px;
 }
 
@@ -194,6 +222,9 @@ ul {
 }
 .card{
     border:none;
+}
+.card b,.card span{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .card img{
     height: 250px;
