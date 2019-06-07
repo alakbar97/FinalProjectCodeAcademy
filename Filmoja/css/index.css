@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-  }
+}
+
 ul {
     margin: 0;
 }
@@ -224,6 +225,7 @@ ul {
 
 .card {
     border: none;
+    position: relative;
 }
 
 .card b,
@@ -409,11 +411,13 @@ ul {
     color: #111;
     font-size: 30px;
 }
-.nwtm span{
+
+.nwtm span {
     font-family: cursive;
     font-weight: 500;
     color: #ec7532;
 }
+
 .itemImg img {
     height: 380px !important;
 }
@@ -462,13 +466,15 @@ ul {
     position: absolute;
     top: 35%;
 }
-.subscriber h4{
+
+.subscriber h4 {
     font-size: 17px;
     color: #fe9052;
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 2px;
 }
-.subscriber h3{
+
+.subscriber h3 {
     color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 40px;
@@ -477,24 +483,27 @@ ul {
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-.subscriber button{
+
+.subscriber button {
     border: none;
     background: linear-gradient(to right, #fbbd61, #ec7532) !important;
-    border-top-right-radius:20px;
+    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 40px;
     margin: 4px;
     margin-left: -4px;
     outline: none;
 }
-.subscriber input{
+
+.subscriber input {
     width: 45%;
     height: 40px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     outline: none;
 }
-.fa-long-arrow-alt-down{
+
+.fa-long-arrow-alt-down {
     font-size: 24px;
     color: white;
 }
@@ -518,12 +527,48 @@ ul {
     width: 4px;
     background: #ec7532;
 }
-.ltnws{
+
+.ltnws {
     font-family: 'Orbitron', sans-serif;
     font-weight: 500;
     color: #111;
     font-size: 30px;
 }
-.ltnws strong{
+
+.ltnws strong {
     font-family: monospace;
 }
+
+@media screen and (min-width: 992px) {
+    .newscard {
+        height: 600px;
+    }
+
+    .newscard img {
+        height: 52%;
+    }
+}
+.hovercard {
+    overflow: hidden;
+  }
+  
+  .hovercard img {
+    transition: transform 0.5s linear;
+  }
+  
+  .hovercard:hover img {
+    transform: scale(1.1);
+  }
+  .hovercard h3 a{
+      text-decoration: none;
+      outline: none;
+      color: black;
+  }
+  .post-tags a{
+      color: black;
+      text-decoration: none;
+      outline: none;
+  }
+  .post-tags i{
+      color: #ec7532;
+  }
