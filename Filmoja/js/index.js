@@ -15,7 +15,11 @@ $('.mainNav a').on('click', function () {
 $(".arrow").hover(
     function () {
         $(this).addClass("animated fadeInLeft").css("opacity", "1");
-    })
+    });
+
+    $(".arrow").mouseleave(function(){
+        $(this).removeClass("animated fadeInLeft").css("opacity", "0");
+    });
 
 
 

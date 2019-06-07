@@ -457,8 +457,8 @@ ul {
 }
 
 .subscriber {
-    height: 400px;
-    background-image: url(../img/strangerthings.jpg);
+    padding: 250px 0;
+    background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
     position: relative;
 }
 
@@ -502,7 +502,15 @@ ul {
     border-bottom-left-radius: 20px;
     outline: none;
 }
-
+@media screen and (max-width: 220px){
+    .subscriber h3{
+        font-size: 15px;
+    }
+    .subscriber button{
+        margin: 0;
+        margin-left: -34px;
+    }
+}
 .fa-long-arrow-alt-down {
     font-size: 24px;
     color: white;
