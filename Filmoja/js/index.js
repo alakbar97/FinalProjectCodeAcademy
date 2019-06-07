@@ -17,9 +17,9 @@ $(".arrow").hover(
         $(this).addClass("animated fadeInLeft").css("opacity", "1");
     });
 
-    $(".arrow").mouseleave(function(){
-        $(this).removeClass("animated fadeInLeft").css("opacity", "0");
-    });
+$(".arrow").mouseleave(function () {
+    $(this).removeClass("animated fadeInLeft").css("opacity", "0");
+});
 
 
 

@@ -87,8 +87,8 @@ ul {
     width: 100%;
 }
 
-.dropdown-slide > .dropdown-menu {
-    opacity:.3;
+.dropdown-slide>.dropdown-menu {
+    opacity: .3;
     display: block;
     -webkit-transform-origin: top;
     transform-origin: top;
@@ -97,13 +97,13 @@ ul {
     -webkit-transform: scale(1, 0);
     transition: all 0.2s linear;
     -webkit-transition: all 0.2s linear;
-  }
-  
-  .show.dropdown-slide > .dropdown-menu {
+}
+
+.show.dropdown-slide>.dropdown-menu {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
-    opacity:1;
-  }
+    opacity: 1;
+}
 
 #carouselExampleIndicators,
 .carousel-inner,
@@ -502,15 +502,18 @@ ul {
     border-bottom-left-radius: 20px;
     outline: none;
 }
-@media screen and (max-width: 220px){
-    .subscriber h3{
+
+@media screen and (max-width: 220px) {
+    .subscriber h3 {
         font-size: 15px;
     }
-    .subscriber button{
+
+    .subscriber button {
         margin: 0;
         margin-left: -34px;
     }
 }
+
 .fa-long-arrow-alt-down {
     font-size: 24px;
     color: white;
@@ -551,9 +554,10 @@ ul {
     .newscard {
         height: 600px;
     }
-.newscard img {
+
+    .newscard img {
         height: 360px;
-    } 
+    }
 }
 
 .hovercard {
@@ -583,88 +587,111 @@ ul {
 .post-tags i {
     color: #ec7532;
 }
- footer{
+
+footer {
     background: #101010 none repeat scroll 0 0;
-} 
-.footersocial li{
-display: inline;
-color: white;
 }
-.filmoja p,.filmoja a{
+
+.footersocial li {
+    display: inline;
     color: white;
 }
-.quicklinks h5{
+
+.filmoja p,
+.filmoja a {
+    color: white;
+}
+
+.quicklinks h5 {
     font-size: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #ec7532;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.quicklinks a,.quicklinks i{
+
+.quicklinks a,
+.quicklinks i {
     font-size: 13px;
     letter-spacing: 1px;
     color: #eee;
     text-transform: capitalize;
 }
-.quicklinks a:hover{
+
+.quicklinks a:hover {
     color: #ec7532;
 }
-.account h5{
+
+.account h5 {
     font-size: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #ec7532;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.account a,.account i{
+
+.account a,
+.account i {
     font-size: 13px;
     letter-spacing: 1px;
     color: #eee;
     text-transform: capitalize;
 }
-.account a:hover{
+
+.account a:hover {
     color: #ec7532;
 }
-.app h5{
+
+.app h5 {
     font-size: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #ec7532;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.app p{
+
+.app p {
     font-size: 13px;
     letter-spacing: 1.5px;
     color: #eee;
 }
-.percent{
+
+.percent {
     color: #ec7532;
 }
-.mainpart{
+
+.mainpart {
     padding: 70px 0;
 }
-.footer-copyright{
+
+.footer-copyright {
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
-.owl-dots{
+
+.owl-dots {
     display: none;
 }
-.owl-nav{
+
+.owl-nav {
     position: absolute;
     right: 0;
     font-size: 60px;
     top: -40%;
 }
-.owl-nav button{
+
+.owl-nav button {
     outline: none;
 }
-.owl-nav button:hover{
+
+.owl-nav button:hover {
     background: none !important;
 }
-.owl-nav button:hover span{
+
+.owl-nav button:hover span {
     color: #ec7532;
 }
-.newsdate{
+
+.newsdate {
     position: absolute;
     right: 25px;
     bottom: 25px;
@@ -678,16 +705,20 @@ color: white;
     display: flex;
     flex-direction: column;
 }
-.newsdate .date{
-font-size: 30px;
-color: white;
+
+.newsdate .date {
+    font-size: 30px;
+    color: white;
 }
-.newsdate .month{
+
+.newsdate .month {
     color: #ec7532;
 }
-.hovercard:hover .newsdate{
+
+.hovercard:hover .newsdate {
     background: linear-gradient(to right, #fbbd61, #ec7532) !important;
 }
-.hovercard:hover .month{
+
+.hovercard:hover .month {
     color: white;
 }
