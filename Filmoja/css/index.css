@@ -548,27 +548,94 @@ ul {
         height: 52%;
     }
 }
+
 .hovercard {
     overflow: hidden;
-  }
-  
-  .hovercard img {
+}
+
+.hovercard img {
     transition: transform 0.5s linear;
-  }
-  
-  .hovercard:hover img {
+}
+
+.hovercard:hover img {
     transform: scale(1.1);
-  }
-  .hovercard h3 a{
-      text-decoration: none;
-      outline: none;
-      color: black;
-  }
-  .post-tags a{
-      color: black;
-      text-decoration: none;
-      outline: none;
-  }
-  .post-tags i{
-      color: #ec7532;
-  }
+}
+
+.hovercard h3 a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+.post-tags a {
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.post-tags i {
+    color: #ec7532;
+}
+ footer{
+    background: #101010 none repeat scroll 0 0;
+} 
+.footersocial li{
+display: inline;
+color: white;
+}
+.filmoja p,.filmoja a{
+    color: white;
+}
+.quicklinks h5{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.quicklinks a,.quicklinks i{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+    text-transform: capitalize;
+}
+.quicklinks a:hover{
+    color: #ec7532;
+}
+.account h5{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.account a,.account i{
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+    text-transform: capitalize;
+}
+.account a:hover{
+    color: #ec7532;
+}
+.app h5{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.app p{
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #eee;
+}
+.percent{
+    color: #ec7532;
+}
+.mainpart{
+    padding: 70px 0;
+}
+.footer-copyright{
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
