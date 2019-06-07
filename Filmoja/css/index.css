@@ -24,7 +24,7 @@ ul {
 
 .fCon {
     background: black;
-    height: 48px;
+    min-height: 48px;
 }
 
 .logo {
@@ -33,7 +33,7 @@ ul {
 }
 
 .scNav {
-    height: 90px;
+    min-height: 90px;
 }
 
 .logoDiv {
@@ -87,23 +87,23 @@ ul {
     width: 100%;
 }
 
-.open1>.dropdown-menu {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 1;
-}
-
-.dropdown-menu {
-    display: inline;
-    opacity: .3;
+.dropdown-slide > .dropdown-menu {
+    opacity:.3;
+    display: block;
     -webkit-transform-origin: top;
     transform-origin: top;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-transform: scale(1, 0);
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-}
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+  }
+  
+  .show.dropdown-slide > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity:1;
+  }
 
 #carouselExampleIndicators,
 .carousel-inner,
@@ -543,10 +543,9 @@ ul {
     .newscard {
         height: 600px;
     }
-
-    .newscard img {
-        height: 52%;
-    }
+.newscard img {
+        height: 360px;
+    } 
 }
 
 .hovercard {
@@ -638,4 +637,49 @@ color: white;
 }
 .footer-copyright{
     border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.owl-dots{
+    display: none;
+}
+.owl-nav{
+    position: absolute;
+    right: 0;
+    font-size: 60px;
+    top: -40%;
+}
+.owl-nav button{
+    outline: none;
+}
+.owl-nav button:hover{
+    background: none !important;
+}
+.owl-nav button:hover span{
+    color: #ec7532;
+}
+.newsdate{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background: #111 none repeat scroll 0 0;
+    width: auto;
+    padding: 15px 20px;
+    color: #ec7532;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+}
+.newsdate .date{
+font-size: 30px;
+color: white;
+}
+.newsdate .month{
+    color: #ec7532;
+}
+.hovercard:hover .newsdate{
+    background: linear-gradient(to right, #fbbd61, #ec7532) !important;
+}
+.hovercard:hover .month{
+    color: white;
 }

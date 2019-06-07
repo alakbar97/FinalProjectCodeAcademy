@@ -21,7 +21,7 @@
     <header>
         <div class="container-fluid">
             <div class="row fCon">
-                <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
                     <ul class="social">
                         <li><a><i class="fab fa-facebook-square"></i></a> </li>
                         <li><a><i class="fab fa-twitter-square"></i></a></li>
@@ -30,7 +30,7 @@
                         <li><a><i class="fab fa-pinterest-square"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center">
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
                     <ul class="community">
                         <li>Community</li>
                         <li>FAQ's</li>
@@ -57,13 +57,15 @@
                 <div class="col-md-5 col-sm-5 col-5">
                     <ul class="mainNav">
                         <li> <a href="#" class="active">Home</a> </li>
-                        <li class="dropdown"><a href="#" id="drop1" data-toggle="dropdown" class="dropdown-toggle"
-                                role="button">Pages</a>
-                            <ul role="menu" class="dropdown-menu" aria-labelledby="drop1">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Pricing</a></li> <br>
-                                <li><a href="#">Blogs</a></li>
-                            </ul>
+                        <li class="nav-item dropdown dropdown-slide dropdown-hover">
+                            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#">Blogs</a>
+                            </div>
                         </li>
                         <li><a href="#">Movies</a></li>
                         <li><a href="#">TV Show</a></li>
@@ -1183,9 +1185,16 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="card newscard hovercard">
-                        <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                        <div style="position: relative;">
+                            <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                            <div class="newsdate">
+                                <span class="date">12</span>
+                                <span class="month">NOV</span>
+                            </div>
+                        </div>
+
                         <div class="card-body bg-light">
-                            <h3><a href="#">Win a Wizarding World holiday with Fantastic</a></h3>
+                            <h3><a href="#">Win a Wizarding World holiday</a></h3>
                             <div class="post-tags">
                                 <span><a href="#"><i class="fa fa-user" style="padding: 4px"></i>David
                                         Cassidy</a></span>
@@ -1201,9 +1210,15 @@
                 </div>
                 <div class="col-md-3 col-sm-12 col-12">
                     <div class="card hovercard">
-                        <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                            <div style="position: relative;">
+                                    <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                                    <div class="newsdate">
+                                        <span class="date">12</span>
+                                        <span class="month">NOV</span>
+                                    </div>
+                                </div>
                         <div class="card-body bg-light">
-                            <h3><a href="#">Win a Wizarding World holiday with Fantastic</a></h3>
+                            <h3><a href="#">Win a Wizarding World holiday</a></h3>
                             <div class="post-tags">
                                 <span><a href="#"><i class="fa fa-user" style="padding: 4px"></i>David
                                         Cassidy</a></span>
@@ -1218,9 +1233,15 @@
                 </div>
                 <div class="col-md-3 col-sm-12 col-12">
                     <div class="card hovercard">
-                        <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                            <div style="position: relative;">
+                                    <img class="card-img-top" src="img/johnwick.jpg" alt="Card image" style="width:100%">
+                                    <div class="newsdate">
+                                        <span class="date">12</span>
+                                        <span class="month">NOV</span>
+                                    </div>
+                                </div>
                         <div class="card-body bg-light">
-                            <h3><a href="#">Win a Wizarding World holiday with Fantastic</a></h3>
+                            <h3><a href="#">Win a Wizarding World holiday</a></h3>
                             <div class="post-tags">
                                 <span><a href="#"><i class="fa fa-user" style="padding: 4px"></i>David
                                         Cassidy</a></span>
@@ -1241,96 +1262,97 @@
 
     <footer class="page-footer font-small indigo">
         <div class="mainpart">
-                <div class="container text-center text-md-left">
+            <div class="container text-center text-md-left">
 
-                        <div class="row">
-                            <div class="col-md-3 mx-auto filmoja">
-            
-                                <a href="#"><img src="img/footer_logo.png"></a>
-            
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>5th Avenue st, Manhattan</p>
-                                    </li>
-                                    <li>
-                                        <p>New York, NY 10001</p>
-                                    </li>
-                                    <li>
-                                        <p>Mail Us: <a href="#">support@flixgo.com</a></p>
-                                    </li>
-                                    <li>
-                                        <p>Call Us: <a href="#">+1 (800) 234-5678</a></p>
-                                    </li>
-                                    <ul class="footersocial">
-                                        <li><a><i class="fab fa-facebook-square"></i></a> </li>
-                                        <li><a><i class="fab fa-twitter-square"></i></a></li>
-                                        <li><a><i class="fab fa-google-plus-square"></i></a></li>
-                                        <li><a><i class="fab fa-linkedin"></i></a></li>
-                                        <li><a><i class="fab fa-pinterest-square"></i></a></li>
-                                    </ul>
-                                </ul>
-            
-                            </div>
-            
-                            <hr class="clearfix w-100 d-md-none">
-            
-                            <div class="col-md-3 mx-auto quicklinks">
-            
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">QUICK LINKS</h5>
-            
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>About Filmoja</a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Get a Ticket</a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Movie Schedule</a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Pricing Plan</a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Terms &amp; Conditions</a></li>
-                                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Privacy policy</a></li>
-                                </ul>
-            
-                            </div>
-            
-                            <hr class="clearfix w-100 d-md-none">
-            
-                            <div class="col-md-3 mx-auto account">
-            
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
-            
-                                <ul class="list-unstyled">
-                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>My Account</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Watchlist</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>Collections</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-double-right"></i>User Guide</a></li>
-                                </ul>
-            
-                            </div>
-            
-                            <hr class="clearfix w-100 d-md-none">
-            
-                            <div class="col-md-3 mx-auto app">
-                                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get Your App Now!</h5>
-            
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <p>Download App And Get Free Movie Ticket !</p>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="img/app-1.jpg" width="45%" style="border-radius: 5px"></a>
-                                        <a href="#"><img src="img/app-2.jpg" width="45%" style="border-radius: 5px"></a>
-                                    </li>
-                                    <li>
-                                        <p><span class="percent">30%</span> Payback On App Download</p>
-                                    </li>
-                                </ul>
-            
-                            </div>
-            
-                        </div>
-            
+                <div class="row">
+                    <div class="col-md-3 mx-auto filmoja">
+
+                        <a href="#"><img src="img/footer_logo.png"></a>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>5th Avenue st, Manhattan</p>
+                            </li>
+                            <li>
+                                <p>New York, NY 10001</p>
+                            </li>
+                            <li>
+                                <p>Mail Us: <a href="#">support@flixgo.com</a></p>
+                            </li>
+                            <li>
+                                <p>Call Us: <a href="#">+1 (800) 234-5678</a></p>
+                            </li>
+                            <ul class="footersocial">
+                                <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                                <li><a><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                                <li><a><i class="fab fa-linkedin"></i></a></li>
+                                <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                            </ul>
+                        </ul>
+
                     </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto quicklinks">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">QUICK LINKS</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>About Filmoja</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Get a Ticket</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Movie Schedule</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Pricing Plan</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Terms &amp; Conditions</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Privacy policy</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto account">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>My Account</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Watchlist</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Collections</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>User Guide</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto app">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get Your App Now!</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Download App And Get Free Movie Ticket !</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/app-1.jpg" width="45%" style="border-radius: 5px"></a>
+                                <a href="#"><img src="img/app-2.jpg" width="45%" style="border-radius: 5px"></a>
+                            </li>
+                            <li>
+                                <p><span class="percent">30%</span> Payback On App Download</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
-       
+
         <div class="footer-copyright text-center py-3">
-            <p style="color:white">2019 © Filmoja. All Rights Reserved - Design By <span style="color: #ec7532">Alakbar</span></p>
+            <p style="color:white">2019 © Filmoja. All Rights Reserved - Design By <span
+                    style="color: #ec7532">Alakbar</span></p>
         </div>
 
     </footer>
@@ -1348,6 +1370,7 @@
             </div>
         </div>
     </div>
+
     <script src="js/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
