@@ -42,19 +42,19 @@
 
             </div>
             <div class="row scNav d-flex align-items-center">
-                <div class="col-md-2 col-sm-2 col-2"></div>
-                <div class="col-md-2 col-sm-2 col-2 d-flex justify-content-end logoDiv">
+                <div class="col-md-2 d-md-block d-none"></div>
+                <div class="col-md-2 col-sm-10 col-10 d-flex justify-content-end logoDiv">
                     <a href="#">
                         <img src="img/logo.png" class="logo">
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-3 col-3">
-                    <form>
+                <div class="col-md-3 d-md-block d-none">
+                    <form class="searchform">
                         <input type="text" placeholder="Search.." class="search">
                         <button type="submit" class="srcButton"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-                <div class="col-md-5 col-sm-5 col-5">
+                <div class="col-md-5 d-md-block d-none">
                     <ul class="mainNav">
                         <li> <a href="#" class="active">Home</a> </li>
                         <li class="nav-item dropdown dropdown-slide dropdown-hover">
@@ -72,6 +72,22 @@
                         <li><a href="#">Celebrities</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                </div>
+                <div class="col-sm-2 col-2 d-md-none">
+                    <div class="side">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <form action="#" style="text-align: center">
+                                <input type="text" placeholder="Search..">
+                            </form>
+                            <a href="#">Home</a>
+                            <a href="#">Movies</a>
+                            <a href="#">TV Show</a>
+                            <a href="#">Celebrities</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1176,7 +1192,7 @@
     <br>
     <section class="latestnews">
         <div class="container">
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-12">
                 <p class="ltnws">Latest <strong>News</strong></p>
             </div>
         </div>

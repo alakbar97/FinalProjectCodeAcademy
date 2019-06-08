@@ -28,7 +28,13 @@ $("#exampleModal").on('hidden.bs.modal', function (e) {
     $("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
 });
 
-
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "auto";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
 
 $('.owl-carousel').owlCarousel({
     loop: true,
