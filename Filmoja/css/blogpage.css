@@ -1,0 +1,488 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+}
+
+.social li {
+    display: inline;
+    padding: 3px;
+}
+
+.community li {
+    display: inline;
+    color: white;
+    padding: 3px;
+}
+
+.social li i {
+    color: white;
+    font-size: 20px;
+}
+
+.fCon {
+    background: black;
+    min-height: 48px;
+}
+
+.logo {
+    height: auto;
+}
+
+.scNav {
+    min-height: 75px;
+}
+
+.search {
+    border: 0;
+    outline: none;
+    width: 80%;
+    background: #eaeaea none repeat scroll 0 0;
+    border-radius: 6px;
+    height: 40px;
+    float: left;
+}
+
+.srcButton {
+    background: #eaeaea none repeat scroll 0 0;
+    border: none;
+    height: 40px;
+    margin-left: -3px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.mainNav li {
+    display: inline;
+    padding: 10px;
+}
+
+.mainNav .active {
+    color: #ec7532;
+}
+
+.mainNav li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mainNav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    transition: width .3s;
+}
+
+.mainNav li a:hover::after {
+    width: 100%;
+}
+
+.dropdown-slide>.dropdown-menu {
+    opacity: .3;
+    display: block;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-transform: scale(1, 0);
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+.show.dropdown-slide>.dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+}
+
+.side {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .side {
+        display: block;
+        margin-left: -18px;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .logoDiv {
+        margin: 0;
+        display: block !important;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .searchform {
+        display: none;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    .sidepanel {
+        width: 0;
+        position: fixed;
+        z-index: 11;
+        height: auto;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidepanel a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidepanel a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background: none !important;
+        color: black;
+        border: none;
+    }
+}
+
+.post-tags a {
+    color: black;
+    text-decoration: none;
+    outline: none;
+}
+
+.post-tags i {
+    color: #ec7532;
+}
+
+footer {
+    background: #101010 none repeat scroll 0 0;
+}
+
+.footersocial li {
+    display: inline;
+    color: white;
+}
+
+.filmoja p,
+.filmoja a {
+    color: white;
+}
+
+.quicklinks h5 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.quicklinks a,
+.quicklinks i {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.quicklinks a:hover {
+    color: #ec7532;
+}
+
+.account h5 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.account a,
+.account i {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.account a:hover {
+    color: #ec7532;
+}
+
+.app h5 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ec7532;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.app p {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #eee;
+}
+
+.percent {
+    color: #ec7532;
+}
+
+.mainpart {
+    padding: 70px 0;
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.breadcrumb {
+    background: none;
+}
+
+.breadarea {
+    background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
+    padding: 70px 0;
+}
+
+.aus {
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.breadcrumb a,
+.breadcrumb .active {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: #ec7532;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.blogs{
+    padding: 57px 0;
+}
+
+.hovercard {
+    overflow: hidden;
+    border: none;
+    padding: 13px 0;
+    border-bottom: 1px solid #ededed;
+    border-radius: 0;
+}
+
+.hovercard img {
+    transition: transform 0.5s linear;
+    height: auto;
+    max-height: 475px;
+}
+
+.hovercard:hover img {
+    transform: scale(1.1);
+}
+
+.hovercard h3 a {
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+.newsdate {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    background: #111 none repeat scroll 0 0;
+    width: auto;
+    padding: 15px 20px;
+    color: #ec7532;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsdate .date {
+    font-size: 30px;
+    color: white;
+}
+
+.newsdate .month {
+    color: #ec7532;
+}
+
+.hovercard:hover .newsdate {
+    background: linear-gradient(to right, #fbbd61, #ec7532) !important;
+}
+
+.hovercard:hover .month {
+    color: white;
+}
+@media screen and (max-width: 162px) {
+    .mailadr {
+        font-size: 9px;
+    }
+
+    .community li {
+        font-size: 10px;
+    }
+
+    .account h5 {
+        font-size: 14px;
+    }
+
+    .aus {
+        font-size: 33px;
+    }
+}
+.posts{
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.sidebartitles{
+    font-size: 21px;
+    color: #101010;
+    line-height: 30px;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+.sidebartitles::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 31%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    top: 90%;
+    left: 0%;
+    border-radius: 12px;
+}
+.tags li{
+    display: inline-block;
+    margin: 2px 0;
+}
+.tags li a{
+    display: block;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+}
+.tags li a:hover{
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+.category li{
+    display: block;
+    border-bottom: 1px solid #ededed;                
+}
+.category li a{
+    display: block;
+    color: #333;
+    padding: 5px 0px;
+}
+.category li a:hover{
+    color: #ec7532;
+    text-decoration: none;
+    outline: none;
+}
+.owl-nav,.owl-dots{
+    display: none;
+}
+.pagination{
+    margin-top: 50px;
+    text-align: center;
+    float: none;
+    display: inline-block;
+}
+.pagination li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.pagination li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #111;
+    font-weight: 500;
+}
+.pagination li.active a, .pagination li a:hover {
+    background: #101010 none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width:218px){
+    .tags li a,.category li a,.sidebartitles{
+        font-size: 12px !important;
+    }
+    .tags,.category{
+        margin-left: -45px;
+    }
+    #datepicker{
+        width: 83px;
+    }
+    .newsdate {
+        right: 5px !important;
+        bottom: 2px !important;
+    }
+}
