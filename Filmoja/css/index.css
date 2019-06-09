@@ -784,3 +784,24 @@ footer {
 .hovercard:hover .month {
     color: white;
 }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+html{
+    scroll-behavior: smooth;
+}
+.topmovies,.newitems,.latestnews{
+    padding: 70px 0;
+}
