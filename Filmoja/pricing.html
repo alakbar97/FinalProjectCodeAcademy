@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filmoja</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row fCon">
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <ul class="social">
+                        <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                        <li><a><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a><i class="fab fa-linkedin"></i></a></li>
+                        <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <ul class="community">
+                        <li>Community</li>
+                        <li>FAQ's</li>
+                        <li>Help</li>
+                        <li>Login</li>
+                        <li>Register</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row scNav d-flex align-items-center">
+                <div class="col-md-2 d-md-block d-none"></div>
+                <div class="col-md-2 col-sm-10 col-10 d-flex justify-content-end logoDiv">
+                    <a href="#">
+                        <img src="img/logo.png" class="logo">
+                    </a>
+                </div>
+                <div class="col-md-3 d-md-block d-none">
+                    <form class="searchform">
+                        <input type="text" placeholder="Search.." class="search">
+                        <button type="submit" class="srcButton"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-5 d-md-block d-none">
+                    <ul class="mainNav">
+                        <li> <a href="#" class="active">Home</a> </li>
+                        <li class="nav-item dropdown dropdown-slide dropdown-hover">
+                            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#">Blogs</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Show</a></li>
+                        <li><a href="#">Celebrities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-2 d-md-none">
+                    <div class="side">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <form action="#" style="text-align: center">
+                                <input type="text" placeholder="Search..">
+                            </form>
+                            <a href="#">Home</a>
+                            <a href="#">Movies</a>
+                            <a href="#">TV Show</a>
+                            <a href="#">Celebrities</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+                    <h2 class="aus">Pricing Plan</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Pricing</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="plan bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h3 class="plantext">
+                            Free Only Pricing Is The Way Financial Planning Should Be. No Commissions. No Products. Just
+                            A Single Fee.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-12 pln">
+                    <div class="card shadow bg-white rounded" style="width: 100%;">
+                        <div class="card-header bg-dark text-white">
+                            <div class="text-center">
+                                <h3>Basic</h3>
+                                <h2>$ 0</h2>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <p class="card-text">7 days</p>
+                                <p class="card-text">720p Resolution
+                                </p>
+                                <p class="card-text">Limited Availability
+                                </p>
+                                <p class="card-text">Desktop Only</p>
+                                <p class="card-text">Limited Support</p>
+                                <form>
+                                    <a href="#" class="btn btn-dark">Choose Plan</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 pln">
+                    <div class="card shadow bg-light rounded" style="width: 100%;">
+                        <div class="card-header premium text-white">
+                            <div class="text-center">
+                                <h3>Premium</h3>
+                                <h2>$ 20</h2>
+                            </div>
+                            <p class="hot text-center bg-light">Hot</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <p class="card-text">1 Month</p>
+                                <p class="card-text">Full HD</p>
+                                <p class="card-text">Lifetime Availability</p>
+                                <p class="card-text">Desktop & TV</p>
+                                <p class="card-text">24/7 Support</p>
+                                <form>
+                                    <a href="#" class="btn premiumbtn">Choose Plan</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-12 pln">
+                    <div class="card shadow bg-white rounded" style="width: 100%;">
+                        <div class="card-header bg-dark text-white">
+                            <div class="text-center">
+                                <h3>Cinematic</h3>
+                                <h2>$ 40</h2>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <p class="card-text">Two Months</p>
+                                <p class="card-text">Ultra HD</p>
+                                <p class="card-text">Lifetime Availability</p>
+                                <p class="card-text">Any Device</p>
+                                <p class="card-text">24/7 Support</p>
+                                <form>
+                                    <a href="#" class="btn btn-dark">Choose Plan</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="filmojafeatures">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="features">Filmoja <span>Features</span></h2>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-group">
+                        <div class="card cline crd bg-light">
+                            <div class="card-body cbody">
+                                <p class="card-text"><i class="fas fa-desktop"></i></p>
+                                <p class="card-text">
+                                    <h3>Ultra HD</h3>
+                                </p>
+                                <p class="card-text">All the Lorem Ipsum generators on the Internet tend to repeat
+                                    predefined chunks as necessary, making this the first.</p>
+                            </div>
+                        </div>
+                        <div class="card cline crd bg-light">
+                            <div class="card-body cbody">
+                                <p class="card-text"><i class="fas fa-globe-europe"></i></p>
+                                <p class="card-text">
+                                    <h3>
+                                        Language Subtitles
+                                    </h3>
+                                </p>
+                                <p class="card-text">All the Lorem Ipsum generators on the Internet tend to repeat
+                                    predefined chunks as necessary, making this the first.</p>
+                            </div>
+                        </div>
+                        <div class="card crd bg-light">
+                            <div class="card-body cbody">
+                                <p class="card-text"><i class="fas fa-trophy"></i></p>
+                                <p class="card-text">
+                                    <h3>
+                                        Awards Winning
+                                    </h3>
+                                </p>
+                                <p class="card-text">All the Lorem Ipsum generators on the Internet tend to repeat
+                                    predefined chunks as necessary, making this the first.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ourpartner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="features">Our <span>Partners</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item"><img src="img/brand-1.png"></div>
+                        <div class="item"><img src="img/brand-2.png"></div>
+                        <div class="item"><img src="img/brand-3.png"></div>
+                        <div class="item"><img src="img/brand-4.png"></div>
+                        <div class="item"><img src="img/brand-5.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small indigo">
+        <div class="mainpart">
+            <div class="container text-center text-md-left">
+
+                <div class="row">
+                    <div class="col-md-3 mx-auto filmoja">
+
+                        <a href="#"><img src="img/footer_logo.png" width="59%"></a>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>5th Avenue st, Manhattan</p>
+                            </li>
+                            <li>
+                                <p>New York, NY 10001</p>
+                            </li>
+                            <li>
+                                <p>Mail Us: <a href="#" class="mailadr">support@flixgo.com</a></p>
+                            </li>
+                            <li>
+                                <p>Call Us: <a href="#">+1 (800) 234-5678</a></p>
+                            </li>
+                            <ul class="footersocial">
+                                <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                                <li><a><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                                <li><a><i class="fab fa-linkedin"></i></a></li>
+                                <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                            </ul>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto quicklinks">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">QUICK LINKS</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>About Filmoja</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Get a Ticket</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Movie Schedule</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Pricing Plan</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Terms &amp; Conditions</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Privacy policy</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto account">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>My Account</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Watchlist</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Collections</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>User Guide</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto app">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get Your App Now!</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Download App And Get Free Movie Ticket !</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/app-1.jpg" width="45%" style="border-radius: 5px"></a>
+                                <a href="#"><img src="img/app-2.jpg" width="45%" style="border-radius: 5px"></a>
+                            </li>
+                            <li>
+                                <p><span class="percent">30%</span> Payback On App Download</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p style="color:white">2019 © Filmoja. All Rights Reserved - Design By <span
+                    style="color: #ec7532">Alakbar</span></p>
+        </div>
+
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/aboutus.js"></script>
+</body>
+
+</html>

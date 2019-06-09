@@ -569,7 +569,9 @@ ul {
     .subscriber h3 {
         font-size: 15px;
     }
-
+    .mailadr {
+        font-size: 9px;
+    }
     .subscriber button {
         margin: 0;
         margin-left: -34px;
