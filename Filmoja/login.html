@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+    <title>Filmoja</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row fCon">
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <ul class="social">
+                        <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                        <li><a><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a><i class="fab fa-linkedin"></i></a></li>
+                        <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
+                    <ul class="community">
+                        <li>Community</li>
+                        <li>FAQ's</li>
+                        <li>Help</li>
+                        <li>Login</li>
+                        <li>Register</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row scNav d-flex align-items-center">
+                <div class="col-md-2 d-md-block d-none"></div>
+                <div class="col-md-2 col-sm-10 col-10 d-flex justify-content-end logoDiv">
+                    <a href="#">
+                        <img src="img/logo.png" class="logo">
+                    </a>
+                </div>
+                <div class="col-md-3 d-md-block d-none">
+                    <form class="searchform">
+                        <input type="text" placeholder="Search.." class="search">
+                        <button type="submit" class="srcButton"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-md-5 d-md-block d-none">
+                    <ul class="mainNav">
+                        <li> <a href="#" class="active">Home</a> </li>
+                        <li class="nav-item dropdown dropdown-slide dropdown-hover">
+                            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">About Us</a>
+                                <a class="dropdown-item" href="#">Pricing</a>
+                                <a class="dropdown-item" href="#">Blogs</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Show</a></li>
+                        <li><a href="#">Celebrities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2 col-2 d-md-none">
+                    <div class="side">
+                        <button class="openbtn" onclick="openNav()">☰</button>
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <form action="#" style="text-align: center">
+                                <input type="text" placeholder="Search..">
+                            </form>
+                            <a href="#">Home</a>
+                            <a href="#">Movies</a>
+                            <a href="#">TV Show</a>
+                            <a href="#">Celebrities</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-12 d-flex flex-column align-items-center">
+                    <h2 class="aus">Login</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active">Login</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registerarea">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>New to Filmoja?</h3>
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title">Please Register Here</h5>
+                            <p class="card-text">It allows you to be able to order from our shop. To start shopping
+                                click login.</p>
+                            <a href="#" class="btn login">Register Here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="h4 mb-4">Login Here</p>
+                    <form class="text-center border border-light">
+                                <!-- E-mail -->
+                                <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4"
+                                    placeholder="E-mail">
+                                <!-- Password -->
+                                <input type="password" id="defaultRegisterFormPassword" class="form-control"
+                                    placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                                <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                                    At least 8 characters
+                                </small>
+
+                        <!-- Sign up button -->
+                        <button class="btn login my-4" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer font-small indigo">
+        <div class="mainpart">
+            <div class="container text-center text-md-left">
+
+                <div class="row">
+                    <div class="col-md-3 mx-auto filmoja">
+
+                        <a href="#"><img src="img/footer_logo.png" width="59%"></a>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>5th Avenue st, Manhattan</p>
+                            </li>
+                            <li>
+                                <p>New York, NY 10001</p>
+                            </li>
+                            <li>
+                                <p>Mail Us: <a href="#" class="mailadr">support@flixgo.com</a></p>
+                            </li>
+                            <li>
+                                <p>Call Us: <a href="#">+1 (800) 234-5678</a></p>
+                            </li>
+                            <ul class="footersocial">
+                                <li><a><i class="fab fa-facebook-square"></i></a> </li>
+                                <li><a><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a><i class="fab fa-google-plus-square"></i></a></li>
+                                <li><a><i class="fab fa-linkedin"></i></a></li>
+                                <li><a><i class="fab fa-pinterest-square"></i></a></li>
+                            </ul>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto quicklinks">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">QUICK LINKS</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>About Filmoja</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Get a Ticket</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Movie Schedule</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Pricing Plan</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Terms &amp; Conditions</a></li>
+                            <li><a href="#"><i class="fas fa-angle-double-right"></i>Privacy policy</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto account">
+
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Account</h5>
+
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>My Account</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Watchlist</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>Collections</a></li>
+                            <li><a href="#"><i class="fa fa-angle-double-right"></i>User Guide</a></li>
+                        </ul>
+
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-3 mx-auto app">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get Your App Now!</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Download App And Get Free Movie Ticket !</p>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/app-1.jpg" width="45%" style="border-radius: 5px"></a>
+                                <a href="#"><img src="img/app-2.jpg" width="45%" style="border-radius: 5px"></a>
+                            </li>
+                            <li>
+                                <p><span class="percent">30%</span> Payback On App Download</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p style="color:white">2019 © Filmoja. All Rights Reserved - Design By <span
+                    style="color: #ec7532">Alakbar</span></p>
+        </div>
+
+    </footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
