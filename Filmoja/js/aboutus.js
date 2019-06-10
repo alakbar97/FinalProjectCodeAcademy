@@ -11,6 +11,8 @@ $('.mainNav a').on('click', function () {
     $('.mainNav').find('.active').removeClass('active');
     $(this).addClass('active');
 });
+
+
 function openNav() {
     document.getElementById("mySidepanel").style.width = "auto";
   }
