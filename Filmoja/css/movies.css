@@ -143,14 +143,6 @@ ul {
         display: none;
     }
 
-    .searchform {
-        display: none;
-    }
-
-    .mainNav {
-        display: none;
-    }
-
     .sidepanel {
         width: 0;
         position: fixed;
@@ -310,11 +302,13 @@ footer {
 .breadcrumb a:hover {
     color: #ec7532;
 }
-.owl-dots,.owl-nav{
+
+.owl-dots,
+.owl-nav {
     display: none;
 }
 
-.movielist{
+.movielist {
     padding: 70px 0;
 }
 
@@ -327,11 +321,13 @@ footer {
         font-size: 22px;
     }
 }
-.posts{
+
+.posts {
     padding: 20px;
     margin-bottom: 25px;
 }
-.sidebartitles{
+
+.sidebartitles {
     font-size: 21px;
     color: #101010;
     line-height: 30px;
@@ -341,7 +337,8 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
-.sidebartitles::after{
+
+.sidebartitles::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -351,33 +348,40 @@ footer {
     left: 0%;
     border-radius: 12px;
 }
-.card-img-top{
+
+.card-img-top {
     max-height: 260px;
     height: auto;
 }
-.rating{
-    background:  linear-gradient(to right, #fbbd61, #ec7532);
+
+.rating {
+    background: linear-gradient(to right, #fbbd61, #ec7532);
     color: white;
     padding: 1px 10px;
     max-height: 26px;
     height: auto;
     border-radius: 5px;
 }
-.hd{
+
+.hd {
     border: 1px solid grey;
     border-radius: 5px;
 }
-.activity a{
-color: black;
-text-decoration: none;
-min-width: 65px;
+
+.activity a {
+    color: black;
+    text-decoration: none;
+    min-width: 65px;
 }
-.activity a i{
+
+.activity a i {
     color: #ec7532;
 }
-.activity a:hover{
+
+.activity a:hover {
     color: #ec7532;
 }
+
 .wtchCar {
     background: linear-gradient(to right, #fbbd61, #ec7532);
     border: none;
@@ -386,6 +390,7 @@ min-width: 65px;
     width: auto;
     color: white;
 }
+
 .modal-body {
     padding: 0;
 }
@@ -393,4 +398,69 @@ min-width: 65px;
 .modal-content {
     width: 100%;
     height: 500px;
+}
+
+.pagination {
+    margin-top: 50px;
+    text-align: center;
+    float: none;
+    display: inline-block;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.pagination li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: #111;
+    font-weight: 500;
+}
+
+.pagination li.active a,
+.pagination li a:hover {
+    background: #101010 none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    .rating {
+        display: flex;
+        justify-content: space-between;
+        padding: 1px 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .rating {
+        display: flex;
+        justify-content: space-between;
+        padding: 1px 6px;
+    }
+}
+
+@media screen and (max-width:212px) {
+    .wtchCar {
+        padding: 3px;
+    }
+
+    select {
+        max-width: 6px;
+    }
+
+    #datepicker {
+        max-width: 60px;
+    }
+
+    .activity a {
+        min-width: 30px;
+    }
+
 }

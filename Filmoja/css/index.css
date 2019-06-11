@@ -109,22 +109,20 @@ ul {
         display: block;
         margin-left: -18px;
     }
-    .logo{
+
+    .logo {
         width: 60%;
     }
-    .logoDiv{
+
+    .logoDiv {
         margin: 0;
         display: block !important;
     }
-    .arrow{
+
+    .arrow {
         display: none;
     }
-    .searchform{
-        display: none;
-    }
-    .mainNav{
-        display: none;
-    }
+
     .sidepanel {
         width: 0;
         position: fixed;
@@ -569,9 +567,11 @@ ul {
     .subscriber h3 {
         font-size: 15px;
     }
+
     .mailadr {
         font-size: 9px;
     }
+
     .subscriber button {
         margin: 0;
         margin-left: -34px;
@@ -786,6 +786,7 @@ footer {
 .hovercard:hover .month {
     color: white;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -800,10 +801,14 @@ footer {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-html{
+}
+
+html {
     scroll-behavior: smooth;
 }
-.topmovies,.newitems,.latestnews{
+
+.topmovies,
+.newitems,
+.latestnews {
     padding: 70px 0;
 }

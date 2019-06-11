@@ -127,14 +127,6 @@ ul {
         display: none;
     }
 
-    .searchform {
-        display: none;
-    }
-
-    .mainNav {
-        display: none;
-    }
-
     .sidepanel {
         width: 0;
         position: fixed;
@@ -311,7 +303,7 @@ footer {
     border-radius: 4px;
 }
 
-.blogs{
+.blogs {
     padding: 57px 0;
 }
 
@@ -338,6 +330,7 @@ footer {
     outline: none;
     color: black;
 }
+
 .newsdate {
     position: absolute;
     right: 25px;
@@ -369,6 +362,7 @@ footer {
 .hovercard:hover .month {
     color: white;
 }
+
 @media screen and (max-width: 162px) {
     .mailadr {
         font-size: 9px;
@@ -386,11 +380,13 @@ footer {
         font-size: 33px;
     }
 }
-.posts{
+
+.posts {
     padding: 20px;
     margin-bottom: 25px;
 }
-.sidebartitles{
+
+.sidebartitles {
     font-size: 21px;
     color: #101010;
     line-height: 30px;
@@ -400,7 +396,8 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
-.sidebartitles::after{
+
+.sidebartitles::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -410,11 +407,13 @@ footer {
     left: 0%;
     border-radius: 12px;
 }
-.tags li{
+
+.tags li {
     display: inline-block;
     margin: 2px 0;
 }
-.tags li a{
+
+.tags li a {
     display: block;
     color: #333;
     padding: 5px 10px;
@@ -423,39 +422,48 @@ footer {
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
 }
-.tags li a:hover{
+
+.tags li a:hover {
     background: linear-gradient(to right, #fbbd61, #ec7532);
     color: white;
     outline: none;
     text-decoration: none;
 }
-.category li{
+
+.category li {
     display: block;
-    border-bottom: 1px solid #ededed;                
+    border-bottom: 1px solid #ededed;
 }
-.category li a{
+
+.category li a {
     display: block;
     color: #333;
     padding: 5px 0px;
 }
-.category li a:hover{
+
+.category li a:hover {
     color: #ec7532;
     text-decoration: none;
     outline: none;
 }
-.owl-nav,.owl-dots{
+
+.owl-nav,
+.owl-dots {
     display: none;
 }
-.pagination{
+
+.pagination {
     margin-top: 50px;
     text-align: center;
     float: none;
     display: inline-block;
 }
-.pagination li{
+
+.pagination li {
     display: inline-block;
     margin-right: 5px;
 }
+
 .pagination li a {
     display: block;
     width: 35px;
@@ -466,21 +474,31 @@ footer {
     color: #111;
     font-weight: 500;
 }
-.pagination li.active a, .pagination li a:hover {
+
+.pagination li.active a,
+.pagination li a:hover {
     background: #101010 none repeat scroll 0 0;
     color: #fff;
     text-decoration: none;
 }
-@media screen and (max-width:218px){
-    .tags li a,.category li a,.sidebartitles{
+
+@media screen and (max-width:218px) {
+
+    .tags li a,
+    .category li a,
+    .sidebartitles {
         font-size: 12px !important;
     }
-    .tags,.category{
+
+    .tags,
+    .category {
         margin-left: -45px;
     }
-    #datepicker{
+
+    #datepicker {
         width: 83px;
     }
+
     .newsdate {
         right: 5px !important;
         bottom: 2px !important;

@@ -123,14 +123,6 @@ ul {
         display: none;
     }
 
-    .searchform {
-        display: none;
-    }
-
-    .mainNav {
-        display: none;
-    }
-
     .sidepanel {
         width: 0;
         position: fixed;
@@ -307,16 +299,19 @@ footer {
     .aus {
         font-size: 33px;
     }
-    .features{
+
+    .features {
         font-size: 19px;
     }
-    .journey{
+
+    .journey {
         font-size: 18px !important;
     }
 }
 
 .carouselarea {
     background: #ebebeb none repeat scroll 0 0;
+    padding: 40px 0;
 }
 
 .previosone {
@@ -328,7 +323,8 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.journey{
+
+.journey {
     font-size: 35px;
     color: #101010;
     line-height: 30px;
@@ -338,6 +334,7 @@ footer {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
+
 .journey::after {
     content: "";
     background: linear-gradient(to right, #fbbd61, #ec7532);
@@ -372,24 +369,30 @@ footer {
     width: 4px;
     background: #ec7532;
 }
-.features{
+
+.features {
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
 }
-.features span{
+
+.features span {
     color: #ec7532;
 }
-.card-body i{
+
+.card-body i {
     font-size: 35px;
     color: #B3BAC5;
 }
-.card-body h3:hover{
+
+.card-body h3:hover {
     color: #ec7532;
 }
-.card{
+
+.card {
     border: none;
 }
-.cline::before{
+
+.cline::before {
     position: absolute;
     content: "";
     background: #e5e5e5;
@@ -398,6 +401,7 @@ footer {
     right: 0;
     top: 19%;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -412,10 +416,13 @@ footer {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-html{
+}
+
+html {
     scroll-behavior: smooth;
 }
-.owl-nav,.owl-dots{
+
+.owl-nav,
+.owl-dots {
     display: none;
 }
