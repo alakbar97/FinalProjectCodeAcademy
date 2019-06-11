@@ -214,6 +214,7 @@ ul {
     height: 47px;
     width: 160px;
     color: white;
+    margin: auto;
 }
 
 .arrow {
@@ -480,6 +481,9 @@ ul {
 
 .itemImg img {
     height: 380px !important;
+}
+.itemImg{
+    padding: 20px 0;
 }
 
 .nav-tabs,
@@ -812,3 +816,10 @@ html {
 .latestnews {
     padding: 70px 0;
 }
+::-webkit-input-placeholder {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+   }
