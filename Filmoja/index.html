@@ -42,56 +42,59 @@
                 </div>
 
             </div>
-            <div class="row scNav d-flex align-items-center">
-                <div class="col-md-4 col-sm-8 col-8 logoDiv">
-                    <a href="#">
-                        <img src="img/logo.png">
-                    </a>
-                </div>
-                <div class="col-md-3 d-md-block d-none searchdiv">
-                    <form>
-                        <input type="text" placeholder="Search..">
-                        <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
-                <div class="col-md-5 d-md-block d-none navdiv">
-                    <nav>
-                        <ul>
-                            <li> <a href="#" class="active">Home</a> </li>
-                            <li class="nav-item dropdown dropdown-slide dropdown-hover">
-                                <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">About Us</a>
-                                    <a class="dropdown-item" href="#">Pricing</a>
-                                    <a class="dropdown-item" href="#">Blogs</a>
-                                </div>
-                            </li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV Show</a></li>
-                            <li><a href="#">Celebrities</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-sm-4 col-4 d-md-none sidediv">
-                    <div class="side">
-                        <button onclick="openNav()">☰</button>
-                        <div id="mySidepanel">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                            <form action="#" style="text-align: center">
-                                <input type="text" placeholder="Search..">
-                            </form>
-                            <a href="#">Home</a>
-                            <a href="#">Movies</a>
-                            <a href="#">TV Show</a>
-                            <a href="#">Celebrities</a>
-                            <a href="#">Contact</a>
+            <nav>
+                <div class="row scNav d-flex align-items-center">
+                    <div class="col-md-4 col-sm-8 col-8 logoDiv">
+                        <a href="#">
+                            <img src="img/logo.png" alt="logo photo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 d-md-block d-none searchdiv">
+                        <form>
+                            <input type="text" placeholder="Search..">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 d-md-block d-none navdiv">
+                        <nav>
+                            <ul>
+                                <li> <a href="#" class="active">Home</a> </li>
+                                <li class="nav-item dropdown dropdown-slide dropdown-hover">
+                                    <a class="nav-link" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">About Us</a>
+                                        <a class="dropdown-item" href="#">Pricing</a>
+                                        <a class="dropdown-item" href="#">Blogs</a>
+                                    </div>
+                                </li>
+                                <li><a href="#">Movies</a></li>
+                                <li><a href="#">TV Show</a></li>
+                                <li><a href="#">Celebrities</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-4 col-4 d-md-none sidediv">
+                        <div class="side">
+                            <button onclick="openNav()">☰</button>
+                            <div id="mySidepanel">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <form action="#" style="text-align: center">
+                                    <input type="text" placeholder="Search..">
+                                </form>
+                                <a href="#">Home</a>
+                                <a href="#">Movies</a>
+                                <a href="#">TV Show</a>
+                                <a href="#">Celebrities</a>
+                                <a href="#">Contact</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <section class="slider">
@@ -147,11 +150,11 @@
                 </div>
             </div>
             <a class="carousel-control-prev arrow" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <img aria-hidden="true" src="img/prev-1.png">
+                <img aria-hidden="true" src="img/prev-1.png" alt="arrow">
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next arrow" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <img aria-hidden="true" src="img/next-1.png">
+                <img aria-hidden="true" src="img/next-1.png" alt="arrow">
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -179,12 +182,12 @@
                                 </figure>
                                 <div class="container">
                                     <h4><b>IT</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
+                                    <ul class="socialactivities d-flex justify-content-around align-items-center">
                                         <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
                                         <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                         <li><a class="btn review d-flex align-items-center" href="#"><i
                                                     class="fas fa-star"></i> <small>4.5</small></a></li>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -201,11 +204,27 @@
                                 </figure>
                                 <div class="container">
                                     <h4><b>The Irishman</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
-                                        <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
-                                        <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
-                                        <li><a class="btn review d-flex align-items-center" href="#"><i
-                                                    class="fas fa-star"></i> <small>4.5</small></a></li>
+                                    <div class="card">
+                                        <figure class="imghvr-shutter-out-diag-1">
+                                            <img src="img/it.jpg" alt="Avatar" style="width:100%">
+                                            <figcaption class="d-flex align-items-center">
+                                                <button type="button" class="btn wtchCar" data-toggle="modal"
+                                                    data-target="#exampleModal">
+                                                    <i class="far fa-play-circle"></i>
+                                                </button>
+                                            </figcaption>
+                                        </figure>
+                                        <div class="container">
+                                            <h4><b>IT</b></h4>
+                                            <ul
+                                                class="socialactivities d-flex justify-content-around align-items-center">
+                                                <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a>
+                                                </li>
+                                                <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
+                                                <li><a class="btn review d-flex align-items-center" href="#"><i
+                                                            class="fas fa-star"></i> <small>4.5</small></a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +232,7 @@
                         <div class="item">
                             <div class="card">
                                 <figure class="imghvr-shutter-out-diag-1">
-                                    <img src="img/johnwick.jpg" alt="Avatar" style="width:100%">
+                                    <img src="img/it.jpg" alt="Avatar" style="width:100%">
                                     <figcaption class="d-flex align-items-center">
                                         <button type="button" class="btn wtchCar" data-toggle="modal"
                                             data-target="#exampleModal">
@@ -222,20 +241,20 @@
                                     </figcaption>
                                 </figure>
                                 <div class="container">
-                                    <h4><b>John Wick</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
+                                    <h4><b>IT</b></h4>
+                                    <ul class="socialactivities d-flex justify-content-around align-items-center">
                                         <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
                                         <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                         <li><a class="btn review d-flex align-items-center" href="#"><i
                                                     class="fas fa-star"></i> <small>4.5</small></a></li>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card">
                                 <figure class="imghvr-shutter-out-diag-1">
-                                    <img src="img/starwars.jpg" alt="Avatar" style="width:100%">
+                                    <img src="img/it.jpg" alt="Avatar" style="width:100%">
                                     <figcaption class="d-flex align-items-center">
                                         <button type="button" class="btn wtchCar" data-toggle="modal"
                                             data-target="#exampleModal">
@@ -244,20 +263,20 @@
                                     </figcaption>
                                 </figure>
                                 <div class="container">
-                                    <h4><b>Star Wars</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
+                                    <h4><b>IT</b></h4>
+                                    <ul class="socialactivities d-flex justify-content-around align-items-center">
                                         <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
                                         <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                         <li><a class="btn review d-flex align-items-center" href="#"><i
                                                     class="fas fa-star"></i> <small>4.5</small></a></li>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card">
                                 <figure class="imghvr-shutter-out-diag-1">
-                                    <img src="img/us.jpg" alt="Avatar" style="width:100%">
+                                    <img src="img/it.jpg" alt="Avatar" style="width:100%">
                                     <figcaption class="d-flex align-items-center">
                                         <button type="button" class="btn wtchCar" data-toggle="modal"
                                             data-target="#exampleModal">
@@ -266,20 +285,20 @@
                                     </figcaption>
                                 </figure>
                                 <div class="container">
-                                    <h4><b>Us</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
+                                    <h4><b>IT</b></h4>
+                                    <ul class="socialactivities d-flex justify-content-around align-items-center">
                                         <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
                                         <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                         <li><a class="btn review d-flex align-items-center" href="#"><i
                                                     class="fas fa-star"></i> <small>4.5</small></a></li>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="card">
                                 <figure class="imghvr-shutter-out-diag-1">
-                                    <img src="img/us.jpg" alt="Avatar" style="width:100%">
+                                    <img src="img/it.jpg" alt="Avatar" style="width:100%">
                                     <figcaption class="d-flex align-items-center">
                                         <button type="button" class="btn wtchCar" data-toggle="modal"
                                             data-target="#exampleModal">
@@ -288,13 +307,13 @@
                                     </figcaption>
                                 </figure>
                                 <div class="container">
-                                    <h4><b>Us</b></h4>
-                                    <div class="socialactivities d-flex justify-content-around align-items-center">
+                                    <h4><b>IT</b></h4>
+                                    <ul class="socialactivities d-flex justify-content-around align-items-center">
                                         <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span> </a></li>
                                         <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                         <li><a class="btn review d-flex align-items-center" href="#"><i
                                                     class="fas fa-star"></i> <small>4.5</small></a></li>
-                                    </div>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -313,7 +332,7 @@
                     <a href="#" class="btn wtchCar">Watch Movie</a>
                 </div>
                 <div class="col-md-7 col-sm-12 col-12" style="position: relative">
-                    <img src="img/theater.jpeg" class="movieImg" width="100%">
+                    <img src="img/theater.jpeg" class="movieImg" width="100%" alt="cinema photo">
                     <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
                         <i class="fab fa-youtube"></i>
                     </button>
@@ -364,14 +383,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -388,14 +407,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -412,14 +431,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -436,14 +455,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -463,14 +482,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -487,14 +506,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -511,14 +530,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -535,14 +554,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -566,14 +585,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -590,14 +609,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -614,14 +633,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -638,14 +657,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -665,14 +684,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -689,14 +708,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -713,14 +732,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -737,14 +756,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -767,14 +786,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -791,14 +810,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -815,14 +834,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -839,14 +858,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -866,14 +885,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -890,14 +909,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -914,14 +933,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -938,14 +957,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -968,14 +987,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -992,14 +1011,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1016,14 +1035,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1040,14 +1059,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1067,14 +1086,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1091,14 +1110,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1115,14 +1134,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1139,14 +1158,14 @@
                                             </figure>
                                             <div class="container">
                                                 <h4><b>Captain Fantastic</b></h4>
-                                                <div
+                                                <ul
                                                     class="socialactivities d-flex justify-content-around align-items-center">
                                                     <li><a href="#"><i class="fas fa-thumbs-up"></i><span>123</span>
                                                         </a></li>
                                                     <li><a href="#"><i class="fas fa-eye"></i><span>324</span></a></li>
                                                     <li><a class="btn review d-flex align-items-center" href="#"><i
                                                                 class="fas fa-star"></i> <small>4.5</small></a></li>
-                                                </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -1208,8 +1227,9 @@
                                             style="padding: 4px"></i>Cycling</a></span>
                             </div>
                             <div class="post-content">
-                                <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
+                                <summary>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</summary>
                             </div>
                         </div>
                     </div>
@@ -1232,8 +1252,9 @@
                                 <span><a href="#"><i class="fa fa-tags" style="padding: 4px"></i>Cycling</a></span>
                             </div>
                             <div class="post-content">
-                                <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
+                                <summary>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</summary>
                             </div>
                         </div>
                     </div>
@@ -1256,8 +1277,9 @@
                                 <span><a href="#"><i class="fa fa-tags" style="padding: 4px"></i>Cycling</a></span>
                             </div>
                             <div class="post-content">
-                                <p>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.</p>
+                                <summary>Eiusmod tempor incididunt ut labore et dolore magna aliqua.Eiusmod tempor
+                                    incididunt
+                                    ut labore et dolore magna aliqua.</summary>
                             </div>
                         </div>
                     </div>
@@ -1272,14 +1294,14 @@
                 <div class="row">
                     <div class="col-md-3 mx-auto filmoja">
 
-                        <a href="#"><img src="img/footer_logo.png" width="59%"></a>
+                        <a href="#"><img src="img/footer_logo.png" width="59%" alt="footer logo"></a>
 
                         <ul class="list-unstyled">
                             <li>
-                                <p>5th Avenue st, Manhattan</p>
+                                <address>5th Avenue st, Manhattan</address>
                             </li>
                             <li>
-                                <p>New York, NY 10001</p>
+                                <address>New York, NY 10001</address>
                             </li>
                             <li>
                                 <p>Mail Us: <a href="#" class="mailadr">support@flixgo.com</a></p>
@@ -1333,8 +1355,10 @@
                                 <p>Download App And Get Free Movie Ticket !</p>
                             </li>
                             <li>
-                                <a href="#"><img src="img/app-1.jpg" width="45%" style="border-radius: 5px"></a>
-                                <a href="#"><img src="img/app-2.jpg" width="45%" style="border-radius: 5px"></a>
+                                <a href="#"><img src="img/app-1.jpg" alt="app logo" width="45%"
+                                        style="border-radius: 5px"></a>
+                                <a href="#"><img src="img/app-2.jpg" alt="app logo" width="45%"
+                                        style="border-radius: 5px"></a>
                             </li>
                             <li>
                                 <p><span class="percent">30%</span> Payback On App Download</p>

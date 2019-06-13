@@ -72,6 +72,10 @@ ul {
   display: none;
 }
 
+input {
+  padding: 12px 20px;
+}
+
 @media screen and (max-width: 767px) {
   .side {
     display: block;
@@ -453,11 +457,15 @@ header .container-fluid .scNav .sidediv div div a:hover {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-.topmovies .container .secondrow div div div div div div li {
+.topmovies .container .secondrow div div div div div .socialactivities {
+  padding: 0;
+}
+
+.topmovies .container .secondrow div div div div div .socialactivities li {
   display: inline;
 }
 
-.topmovies .container .secondrow div div div div div div li .review {
+.topmovies .container .secondrow div div div div div .socialactivities li .review {
   background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
   background: linear-gradient(to right, #fbbd61, #ec7532);
   border: none;
@@ -465,25 +473,25 @@ header .container-fluid .scNav .sidediv div div a:hover {
   border-radius: 5px;
 }
 
-.topmovies .container .secondrow div div div div div div li .review i {
+.topmovies .container .secondrow div div div div div .socialactivities li .review i {
   color: white !important;
 }
 
-.topmovies .container .secondrow div div div div div div li .review small {
+.topmovies .container .secondrow div div div div div .socialactivities li .review small {
   font-size: 15px;
   color: white;
 }
 
-.topmovies .container .secondrow div div div div div div li a {
+.topmovies .container .secondrow div div div div div .socialactivities li a {
   text-decoration: none;
   color: #111;
 }
 
-.topmovies .container .secondrow div div div div div div li a i {
+.topmovies .container .secondrow div div div div div .socialactivities li a i {
   color: #ec7532;
 }
 
-.topmovies .container .secondrow div div div div div div li a span {
+.topmovies .container .secondrow div div div div div .socialactivities li a span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -648,11 +656,15 @@ header .container-fluid .scNav .sidediv div div a:hover {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities {
+  padding: 0;
+}
+
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li {
   display: inline;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li .review {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li .review {
   background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
   background: linear-gradient(to right, #fbbd61, #ec7532);
   border: none;
@@ -660,25 +672,25 @@ header .container-fluid .scNav .sidediv div div a:hover {
   border-radius: 5px;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li .review i {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li .review i {
   color: white !important;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li .review small {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li .review small {
   font-size: 15px;
   color: white;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li a {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li a {
   text-decoration: none;
   color: #111;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li a i {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li a i {
   color: #ec7532;
 }
 
-.newitems .container .row div div .tab-pane .row div .card div div li a span {
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li a span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
@@ -752,7 +764,7 @@ header .container-fluid .scNav .sidediv div div a:hover {
 .latestnews .titlecontainer .row div p::before {
   left: 2px;
   position: absolute;
-  bottom: 0;
+  bottom: 26px;
   height: 30px;
   width: 4px;
   background: #111;
@@ -762,7 +774,7 @@ header .container-fluid .scNav .sidediv div div a:hover {
 .latestnews .titlecontainer .row div p::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 26px;
   left: 8px;
   height: 20px;
   width: 4px;
@@ -872,6 +884,10 @@ footer .mainpart .container .row div a {
 }
 
 footer .mainpart .container .row div ul li p {
+  color: white;
+}
+
+footer .mainpart .container .row div ul li address {
   color: white;
 }
 

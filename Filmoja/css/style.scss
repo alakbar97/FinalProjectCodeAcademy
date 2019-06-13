@@ -71,7 +71,9 @@ ul {
 .owl-dots {
     display: none;
 }
-
+input{
+    padding: 12px 20px;
+}
 @media screen and (max-width: 767px) {
     .side {
         display: block;
@@ -514,7 +516,8 @@ header {
                                     }
                                 }
 
-                                div {
+                                .socialactivities {
+                                    padding: 0;
                                     li {
                                         display: inline;
 
@@ -744,7 +747,8 @@ header {
                                             }
                                         }
 
-                                        div {
+                                        .socialactivities {
+                                            padding: 0;
                                             li {
                                                 display: inline;
 
@@ -869,7 +873,7 @@ header {
                 p::before {
                     left: 2px;
                     position: absolute;
-                    bottom: 0;
+                    bottom: 26px;
                     height: 30px;
                     width: 4px;
                     background: #111;
@@ -879,7 +883,7 @@ header {
                 p::after {
                     content: "";
                     position: absolute;
-                    bottom: 0;
+                    bottom: 26px;
                     left: 8px;
                     height: 20px;
                     width: 4px;
@@ -1002,6 +1006,9 @@ footer {
                     ul {
                         li {
                             p {
+                                color: white;
+                            }
+                            address{
                                 color: white;
                             }
                         }
