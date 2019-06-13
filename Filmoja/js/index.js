@@ -12,16 +12,6 @@ $('.mainNav a').on('click', function () {
     $(this).addClass('active');
 });
 
-$(".arrow").hover(
-    function () {
-        $(this).addClass("animated fadeInLeft").css("opacity", "1");
-    });
-
-$(".arrow").mouseleave(function () {
-    $(this).removeClass("animated fadeInLeft").css("opacity", "0");
-});
-
-
 
 
 $("#exampleModal").on('hidden.bs.modal', function (e) {
