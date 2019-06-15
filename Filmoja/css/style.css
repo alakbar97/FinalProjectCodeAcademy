@@ -162,6 +162,10 @@ input {
   }
 }
 
+#datepicker {
+  padding: 0 !important;
+}
+
 .pagination {
   margin-top: 50px;
   text-align: center;
