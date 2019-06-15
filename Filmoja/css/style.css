@@ -14,6 +14,7 @@ img {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -1480,5 +1481,159 @@ footer .footer-copyright {
 
 .series .container .row .col-md-3 .card .container .socialactivities li a span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.breadarea .container .row img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  height: 365px;
+}
+
+.breadarea .container .row .movieinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.breadarea .container .row .movieinfo h3 {
+  font-size: 27px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.breadarea .container .row .movieinfo p {
+  color: #eee;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.breadarea .container .row .movieinfo p i {
+  color: #ec7532;
+}
+
+.breadarea .container .row .watchmovie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media screen and (max-width: 575px) {
+  .breadarea .container .row img {
+    max-width: 100%;
+    position: relative !important;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+  }
+  .breadarea .container .row .movieinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .breadarea .container .row .watchmovie {
+    display: block;
+  }
+}
+
+.moviedetails {
+  padding: 70px 0;
+}
+
+.moviedetails .container .row div ul li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+.moviedetails .container .row div ul li span {
+  width: 10%;
+}
+
+.moviedetails .container .tabrow {
+  margin-top: 30px;
+}
+
+.moviedetails .container .tabrow ul,
+.moviedetails .container .tabrow ul > li > a {
+  border: none;
+}
+
+.moviedetails .container .tabrow ul {
+  padding-top: 6px;
+}
+
+.moviedetails .container .tabrow ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.moviedetails .container .tabrow ul li a:hover::after {
+  width: 100%;
+}
+
+.moviedetails .container .tabrow ul li a.active {
+  color: #ec7532;
+}
+
+.moviedetails .container .tabrow ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 992px) {
+  .moviedetails {
+    padding: 70px 0;
+  }
+  .moviedetails .container .row div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .moviedetails .container .row div ul li {
+    list-style: none;
+    margin-bottom: 3px;
+  }
+  .moviedetails .container .row div ul li span {
+    width: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

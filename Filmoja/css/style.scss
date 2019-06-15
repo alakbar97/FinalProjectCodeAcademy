@@ -15,6 +15,7 @@ img {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -169,9 +170,11 @@ input {
         bottom: 2px !important;
     }
 }
-#datepicker{
+
+#datepicker {
     padding: 0 !important;
 }
+
 .pagination {
     margin-top: 50px;
     text-align: center;
@@ -565,138 +568,1294 @@ header {
     }
 }
 
-.todaysmovie {
-    position: relative;
-    z-index: 1;
+    .todaysmovie {
+        position: relative;
+        z-index: 1;
 
-    div {
-        .row {
-            .mainmovie {
-                h3 {
-                    color: #fff;
-                    font-family: cursive;
-                    font-size: 37px;
-                    font-weight: 500;
-                    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
-                    text-transform: capitalize;
-                    letter-spacing: 1px;
-                }
-
-                h4 {
-                    font-size: 17px;
-                    color: $page-color;
-                    font-family: 'Roboto Condensed', sans-serif;
-                    letter-spacing: 2px;
-                }
-
-                p {
-                    color: #fff;
-                    font-size: 16px;
-                    text-transform: capitalize;
-                    font-weight: 400;
-                }
-            }
-
-            div {
-                img {
-                    border: 5px solid $page-color;
-                    border-radius: 5px;
-                }
-
-                button {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    color: white;
-                    font-size: 16px;
-                    padding: 12px 24px;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    text-align: center;
-                    background: none;
-
-                    i {
-                        color: red;
-                        font-size: 50px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.todaysmovie::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 65%;
-    height: 100%;
-    background: #111 none repeat scroll 0 0;
-    opacity: 0.5;
-}
-
-.todaysmovie::after {
-    position: absolute;
-    left: 0;
-    content: "";
-    width: 65%;
-    top: 0;
-    height: 100%;
-    background: url(../img/walfstreet.jpg);
-    z-index: -1;
-}
-
-.newitems {
-    padding: 70px 0;
-
-    .firstcontainer {
-        .row {
-            div {
-                sub {
-                    font-family: "Lucida Console", Monaco, monospace;
-                    text-transform: capitalize;
-                    font-weight: 500;
-                    color: #111;
-                    font-size: 30px;
-
-                    span {
+        div {
+            .row {
+                .mainmovie {
+                    h3 {
+                        color: #fff;
                         font-family: cursive;
+                        font-size: 37px;
                         font-weight: 500;
+                        text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+                        text-transform: capitalize;
+                        letter-spacing: 1px;
+                    }
+
+                    h4 {
+                        font-size: 17px;
                         color: $page-color;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        letter-spacing: 2px;
+                    }
+
+                    p {
+                        color: #fff;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        font-weight: 400;
                     }
                 }
 
-                sub::before {
-                    left: -9px;
-                    position: absolute;
-                    bottom: 0;
-                    height: 30px;
-                    width: 4px;
-                    background: #111;
-                    content: "";
-                }
+                div {
+                    img {
+                        border: 5px solid $page-color;
+                        border-radius: 5px;
+                    }
 
-                sub::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: -4px;
-                    height: 20px;
-                    width: 4px;
-                    background: $page-color;
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        color: white;
+                        font-size: 16px;
+                        padding: 12px 24px;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        text-align: center;
+                        background: none;
+
+                        i {
+                            color: red;
+                            font-size: 50px;
+                        }
+                    }
                 }
             }
         }
     }
 
-    .container {
-        .row {
-            div {
+    .todaysmovie::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        background: #111 none repeat scroll 0 0;
+        opacity: 0.5;
+    }
 
+    .todaysmovie::after {
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 65%;
+        top: 0;
+        height: 100%;
+        background: url(../img/walfstreet.jpg);
+        z-index: -1;
+    }
+
+    .newitems {
+        padding: 70px 0;
+
+        .firstcontainer {
+            .row {
+                div {
+                    sub {
+                        font-family: "Lucida Console", Monaco, monospace;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        color: #111;
+                        font-size: 30px;
+
+                        span {
+                            font-family: cursive;
+                            font-weight: 500;
+                            color: $page-color;
+                        }
+                    }
+
+                    sub::before {
+                        left: -9px;
+                        position: absolute;
+                        bottom: 0;
+                        height: 30px;
+                        width: 4px;
+                        background: #111;
+                        content: "";
+                    }
+
+                    sub::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: -4px;
+                        height: 20px;
+                        width: 4px;
+                        background: $page-color;
+                    }
+                }
+            }
+        }
+
+        .container {
+            .row {
+                div {
+
+                    ul,
+                    ul>li>a {
+                        border: none;
+                    }
+
+                    ul {
+                        padding-top: 6px;
+
+                        li a::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 4px;
+                            background: linear-gradient(to right, #fbbd61, #ec7532);
+                            transition: width .3s;
+                        }
+
+                        li a:hover::after {
+                            width: 100%;
+                        }
+
+                        li {
+                            a.active {
+                                color: $page-color;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    div {
+                        .tab-pane {
+                            .container {}
+
+                            .row {
+                                div {
+                                    .card {
+                                        border: none;
+
+                                        figure {
+                                            img {
+                                                height: 380px !important;
+                                            }
+                                        }
+
+                                        div {
+                                            h4 {
+                                                b {
+                                                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                                }
+                                            }
+
+                                            .socialactivities {
+                                                padding: 0;
+
+                                                li {
+                                                    display: inline;
+
+                                                    .review {
+                                                        background: linear-gradient(to right, #fbbd61, #ec7532);
+                                                        border: none;
+                                                        height: 20px;
+                                                        border-radius: 5px;
+
+                                                        i {
+                                                            color: white !important;
+                                                        }
+
+                                                        small {
+                                                            font-size: 15px;
+                                                            color: white;
+                                                        }
+                                                    }
+
+                                                    a {
+                                                        text-decoration: none;
+                                                        color: #111;
+
+                                                        i {
+                                                            color: $page-color;
+                                                        }
+
+                                                        span {
+                                                            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .subscriber {
+        padding: 250px 0;
+        background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
+        position: relative;
+
+        .container {
+            position: absolute;
+            top: 35%;
+
+            .row {
+                div {
+                    div {
+                        h4 {
+                            font-size: 17px;
+                            color: #fe9052;
+                            font-family: 'Roboto Condensed', sans-serif;
+                            letter-spacing: 2px;
+                        }
+
+                        h3 {
+                            color: #fff;
+                            font-family: 'Roboto Condensed', sans-serif;
+                            font-size: 40px;
+                            font-weight: 500;
+                            text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+                            text-transform: capitalize;
+                            letter-spacing: 1px;
+                        }
+
+                        i {
+                            color: white;
+                        }
+
+                        form {
+                            input {
+                                width: 45%;
+                                height: 40px;
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                outline: none;
+                            }
+
+                            button {
+                                border: none;
+                                background: linear-gradient(to right, #fbbd61, #ec7532) !important;
+                                border-top-right-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                height: 40px;
+                                margin: 4px;
+                                margin-left: -4px;
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .latestnews {
+        padding: 70px 0;
+
+        .titlecontainer {
+            .row {
+                div {
+                    p {
+                        font-family: 'Orbitron', sans-serif;
+                        font-weight: 500;
+                        color: #111;
+                        font-size: 30px;
+
+                        strong {
+                            font-family: monospace
+                        }
+                    }
+
+                    p::before {
+                        left: 2px;
+                        position: absolute;
+                        bottom: 26px;
+                        height: 30px;
+                        width: 4px;
+                        background: #111;
+                        content: "";
+                    }
+
+                    p::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 26px;
+                        left: 8px;
+                        height: 20px;
+                        width: 4px;
+                        background: #ec7532;
+                    }
+                }
+            }
+        }
+
+        .container {
+            .row {
+                div {
+                    .card {
+                        div {
+                            overflow: hidden;
+
+                            img {
+                                transition: transform 0.5s linear;
+                            }
+
+                            .sideimg {
+                                max-height: 250px;
+                            }
+
+                            .newsdate {
+                                position: absolute;
+                                right: 25px;
+                                bottom: 25px;
+                                background: #111 none repeat scroll 0 0;
+                                width: auto;
+                                padding: 15px 20px;
+                                color: $page-color;
+                                font-weight: 600;
+                                text-align: center;
+                                transition: all 0.3s ease 0s;
+                                display: flex;
+                                flex-direction: column;
+
+                                .date {
+                                    font-size: 30px;
+                                    color: white;
+                                }
+
+                                .month {
+                                    color: $page-color;
+                                }
+                            }
+                        }
+
+                        .card-body {
+                            h3 {
+                                a {
+                                    text-decoration: none;
+                                    outline: none;
+                                    color: black;
+                                }
+                            }
+
+                            .post-tags {
+                                span {
+                                    a {
+                                        color: black;
+                                        text-decoration: none;
+                                        outline: none;
+
+                                        i {
+                                            color: $page-color
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .newscard {
+                        img {
+                            max-height: 350px;
+                        }
+                    }
+
+                    .card:hover .newsdate {
+                        background: $page-background;
+                    }
+
+                    .card:hover .month {
+                        color: white;
+                    }
+
+                    .card:hover .sideimg {
+                        transform: scale(1.1);
+                        max-height: 250px;
+                    }
+
+                    .card:hover .newsimg {
+                        transform: scale(1.1);
+                        max-height: 350px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background: #101010 none repeat scroll 0 0;
+
+        .mainpart {
+            padding: 70px 0;
+
+            .container {
+                .row {
+                    div {
+                        h5 {
+                            color: $page-color
+                        }
+
+                        a {
+                            color: white;
+                        }
+
+                        ul {
+                            li {
+                                p {
+                                    color: white;
+                                }
+
+                                address {
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: inline;
+                                    color: white;
+
+                                    a {
+                                        i {
+                                            font-size: 21px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-copyright {
+            border-top: 1px solid rgba(255, 255, 255, .1);
+        }
+    }
+
+    @media screen and (max-width: 780px) {
+        .todaysmovie::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #111 none repeat scroll 0 0;
+            opacity: 0.5;
+        }
+
+        .todaysmovie::after {
+            position: absolute;
+            left: 0;
+            content: "";
+            width: 100%;
+            top: 0;
+            height: 100%;
+            background: url(../img/walfstreet.jpg);
+            z-index: -1;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+        .slider {
+            div {
+                a {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:656px) {
+        .carousel-caption {
+            h2 {
+                color: #fff;
+                font-family: 'Orbitron', sans-serif;
+                font-size: 20px !important;
+                font-weight: 600;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+                text-transform: capitalize;
+                letter-spacing: 0px !important;
+                line-height: 16px !important;
+            }
+        }
+
+        .plantext {
+            font-size: 13px !important;
+        }
+    }
+
+    .breadarea {
+        background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
+        padding: 70px 0;
+
+        .container {
+            .row {
+                div {
+                    h2 {
+                        color: #fff;
+                        text-transform: capitalize;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        letter-spacing: 2px;
+                        font-size: 38px;
+                        font-weight: 400;
+                    }
+
+                    nav {
+                        ol {
+                            background: none;
+
+                            li {
+                                a {
+                                    color: white;
+                                    text-decoration: none;
+                                }
+
+                                a:hover {
+                                    color: $page-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 162px) {
+        .mailadr {
+            font-size: 9px;
+        }
+
+        .community li {
+            font-size: 10px;
+        }
+
+        .account h5 {
+            font-size: 14px;
+        }
+
+        .aus {
+            font-size: 25px !important;
+        }
+
+        .features {
+            font-size: 19px;
+        }
+
+        .journey {
+            font-size: 18px !important;
+        }
+    }
+
+    .carouselarea {
+        background: #ebebeb none repeat scroll 0 0;
+        padding: 40px 0;
+
+        .container {
+            .cfirstrow {
+                div {
+                    #carouselExampleControls {
+                        div {}
+
+                        a {
+                            span {
+                                background: orange;
+                                border-radius: 50%;
+                                width: 40px;
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row {
+                div {
+                    div {
+                        h3 {
+                            font-size: 35px;
+                            color: #101010;
+                            line-height: 30px;
+                            position: relative;
+                            font-weight: 500;
+                            margin-bottom: 30px;
+                            font-family: 'Roboto Condensed', sans-serif;
+                            letter-spacing: 1px;
+                        }
+
+                        h3::after {
+                            content: "";
+                            background: linear-gradient(to right, #fbbd61, #ec7532);
+                            height: 5px;
+                            position: absolute;
+                            width: 11%;
+                            bottom: -26%;
+                            left: 44%;
+                            border-radius: 8px;
+                        }
+
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+
+    .filmojafeatures {
+        padding: 70px 0;
+
+        .container {
+            .row {
+                div {
+                    h2 {
+                        font-family: 'Courier New', Courier, monospace;
+                        margin: auto;
+
+                        span {
+                            color: $page-color;
+                        }
+                    }
+
+                    h2::before {
+                        left: 0;
+                        position: absolute;
+                        bottom: 0;
+                        height: 30px;
+                        width: 4px;
+                        background: #111;
+                        content: "";
+                    }
+
+                    h2::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 6px;
+                        height: 20px;
+                        width: 4px;
+                        background: #ec7532;
+                    }
+                }
+            }
+
+            .row {
+                div {
+                    .card-group {
+                        .card {
+                            border: none;
+
+                            .card-body {
+                                p {
+                                    i {
+                                        font-size: 35px;
+                                        color: #B3BAC5;
+                                    }
+                                }
+
+                                p {
+                                    h3 {}
+
+                                    h3:hover {
+                                        color: $page-color;
+                                    }
+                                }
+                            }
+                        }
+
+                        .cline::before {
+                            position: absolute;
+                            content: "";
+                            background: #e5e5e5;
+                            width: 2px;
+                            height: 70%;
+                            right: 0;
+                            top: 19%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .blogs {
+        padding: 57px 0;
+
+        .container {
+
+            .owl-nav,
+            .owl-dots {
+                display: none;
+            }
+
+            .row {
+                div {
+                    .card {
+                        overflow: hidden;
+                        border: none;
+                        padding: 13px 0;
+                        border-bottom: 1px solid #ededed;
+                        border-radius: 0;
+
+                        div {
+                            img {
+                                transition: transform 0.5s linear;
+                                height: auto;
+                                max-height: 475px;
+                            }
+
+                            .newsdate {
+                                position: absolute;
+                                right: 25px;
+                                bottom: 25px;
+                                background: #111 none repeat scroll 0 0;
+                                width: auto;
+                                padding: 15px 20px;
+                                color: $page-color;
+                                font-weight: 600;
+                                text-align: center;
+                                transition: all 0.3s ease 0s;
+                                display: flex;
+                                flex-direction: column;
+
+                                .date {
+                                    font-size: 30px;
+                                    color: white;
+                                }
+
+                                .month {
+                                    color: $page-color;
+                                }
+                            }
+                        }
+
+                        .card-body {
+                            h3 {
+                                a {
+                                    text-decoration: none;
+                                    outline: none;
+                                    color: black;
+                                }
+                            }
+
+                            .post-tags {
+                                span {
+                                    a {
+                                        color: black;
+                                        text-decoration: none;
+                                        outline: none;
+
+                                        i {
+                                            color: $page-color
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+                    .commentcard {
+                        margin-bottom: 10px;
+                        padding: 0 30px 20px;
+                    }
+
+                    h4 {
+                        margin-top: 10%;
+                        font-family: cursive;
+                    }
+
+                    form {
+                        textarea {
+                            width: 90%;
+                            height: 120px;
+                            outline: none;
+                        }
+                    }
+
+                    .card:hover img {
+                        transform: scale(1.1);
+                    }
+
+                    .card:hover .newsdate {
+                        background: $page-background !important;
+                    }
+
+                    .card:hover .month {
+                        color: white;
+                    }
+                }
+
+                div {
+                    div {
+                        h3 {}
+
+                        input {}
+                    }
+
+                    .posts {
+                        padding: 20px;
+                        margin-bottom: 25px;
+
+                        img {
+                            transform: none !important;
+                        }
+
+                        h3 {
+                            font-size: 21px;
+                            color: #101010;
+                            line-height: 30px;
+                            position: relative;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                            font-family: 'Roboto Condensed', sans-serif;
+                            letter-spacing: 1px;
+                        }
+
+                        h3::after {
+                            content: "";
+                            position: absolute;
+                            height: 4px;
+                            width: 31%;
+                            background: linear-gradient(to right, #fbbd61, #ec7532);
+                            top: 90%;
+                            left: 0%;
+                            border-radius: 12px;
+                        }
+
+                        .tags {
+                            li {
+                                display: inline-block;
+                                margin: 2px 0;
+
+                                a {
+                                    display: block;
+                                    color: #333;
+                                    padding: 5px 10px;
+                                    border: 1px solid #ededed;
+                                    border-radius: 3px;
+                                    -webkit-transition: all 0s ease 0s;
+                                    transition: all 0s ease 0s;
+                                }
+
+                                a:hover {
+                                    background: linear-gradient(to right, #fbbd61, #ec7532);
+                                    color: white;
+                                    outline: none;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+
+                        .category {
+                            li {
+                                display: block;
+                                border-bottom: 1px solid #ededed;
+
+                                a {
+                                    display: block;
+                                    color: #333;
+                                    padding: 5px 0px;
+                                }
+
+                                a:hover {
+                                    color: #ec7532;
+                                    text-decoration: none;
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .movielist {
+        padding: 70px 0;
+
+        .owl-dots,
+        .owl-nav {
+            display: none;
+        }
+
+        .container {
+            .row {
+                div {
+                    .posts {
+                        padding: 20px;
+                        margin-bottom: 25px;
+
+                        h3 {
+
+                            position: relative;
+                        }
+
+                        h3::after {
+                            content: "";
+                            position: absolute;
+                            height: 4px;
+                            width: 31%;
+                            background: linear-gradient(to right, #fbbd61, #ec7532);
+                            top: 97%;
+                            left: 0%;
+                            border-radius: 12px;
+                        }
+                    }
+                }
+
+                div {
+                    .movieheader {
+                        padding: 13px 8px;
+
+                        p {
+                            strong {}
+                        }
+                    }
+
+                    .row {
+                        padding: 20px 0;
+
+                        div {
+                            .card {
+                                a {
+                                    img {
+                                        max-height: 260px;
+                                        height: auto;
+                                    }
+                                }
+
+                                .card-body {
+                                    h5 {}
+
+                                    p {}
+
+                                    .rates {
+                                        a {
+                                            background: $page-background;
+                                            color: white;
+                                            padding: 1px 10px;
+                                            max-height: 26px;
+                                            height: auto;
+                                            border-radius: 5px;
+
+                                            i {}
+
+                                            span {}
+                                        }
+
+                                        p {
+                                            border: 1px solid grey;
+                                            border-radius: 5px;
+                                        }
+                                    }
+
+                                    .activity {
+                                        a {
+                                            color: black;
+                                            text-decoration: none;
+                                            min-width: 65px;
+
+                                            i {
+                                                color: $page-color;
+                                            }
+
+                                            span {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:1200px) {
+        .rates a {
+            display: flex;
+            justify-content: space-between;
+            padding: 1px 6px;
+        }
+    }
+
+    @media screen and (max-width:212px) {
+        .wtchCar {
+            padding: 3px;
+        }
+
+        select {
+            max-width: 6px;
+        }
+
+        #datepicker {
+            max-width: 60px;
+        }
+
+        .activity a {
+            min-width: 30px;
+        }
+
+        .aus {
+            font-size: 25px !important;
+        }
+    }
+
+    .plan {
+        padding: 70px 0;
+
+        .container {
+            .pfirstrow {
+                div {
+                    div {
+                        h3 {
+                            line-height: 42px;
+                            letter-spacing: 3px;
+                            font-size: 28px;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+
+            .row {
+                .pln {
+                    .card {
+                        .card-header {
+                            padding: 50px 0;
+                        }
+
+                        .premium,
+                        .premiumbtn {
+                            background: $page-background;
+                        }
+
+                        .premiumbtn {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .registerarea {
+        padding: 70px 0;
+
+        .container {
+            .row {
+                .login {
+                    background: #ec7532;
+                    color: white;
+                }
+
+                div {
+
+                    .card {
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .series {
+        padding: 70px 0;
+
+        .container {
+            .row {
+                .movieheader {
+                    padding: 25px 0;
+
+                    div {
+                        padding: 12px 0;
+
+                        p {
+                            margin: auto 0;
+                        }
+
+                        select {}
+                    }
+                }
+
+                .col-md-3 {
+                    padding: 12px 5px;
+
+                    .card {
+                        border: none;
+
+                        figure {
+                            img {
+                                min-height: 320px;
+                            }
+                        }
+
+                        .container {
+                            h4 {
+                                b {
+                                    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                }
+                            }
+
+                            .socialactivities {
+                                padding: 0;
+
+                                li {
+                                    display: inline;
+
+                                    .review {
+                                        background: linear-gradient(to right, #fbbd61, #ec7532);
+                                        border: none;
+                                        height: 20px;
+                                        border-radius: 5px;
+
+                                        i {
+                                            color: white !important;
+                                        }
+
+                                        small {
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+                                    }
+
+                                    a {
+                                        text-decoration: none;
+                                        color: #111;
+
+                                        i {
+                                            color: $page-color;
+                                        }
+
+                                        span {
+                                            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .breadarea {
+        .container {
+            .row {
+                img {
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    border-radius: 5px;
+                    height: 365px;
+                }
+
+                .movieinfo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    h3 {
+                        font-size: 27px;
+                        color: #fff;
+                        text-transform: capitalize;
+                        margin-bottom: 10px;
+                        position: relative;
+                        display: inline-block;
+                    }
+
+                    p {
+                        color: #eee;
+                        text-transform: capitalize;
+                        font-weight: 500;
+                        font-family: 'Roboto Condensed', sans-serif;
+                        letter-spacing: 1px;
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+
+                        i {
+                            color: $page-color
+                        }
+                    }
+                }
+
+                .watchmovie {
+                    display: flex;
+                    justify-content: end;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:575px) {
+        .breadarea {
+            .container {
+                .row {
+                    img {
+                        max-width: 100%;
+                        position: relative !important;
+                        left: 0;
+                        top: 0;
+                        border-radius: 5px;
+                    }
+
+                    .movieinfo {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    .watchmovie {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .moviedetails {
+        padding: 70px 0;
+
+        .container {
+            .row {
+                div {
+                    ul {
+                        li {
+                            list-style: none;
+                            margin-bottom: 3px;
+
+                            span {
+                                width: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+            .tabrow{
+                margin-top: 30px;
                 ul,
                 ul>li>a {
                     border: none;
@@ -729,306 +1888,28 @@ header {
                         }
                     }
                 }
-
-                div {
-                    .tab-pane {
-                        .container {}
-
-                        .row {
-                            div {
-                                .card {
-                                    border: none;
-
-                                    figure {
-                                        img {
-                                            height: 380px !important;
-                                        }
-                                    }
-
-                                    div {
-                                        h4 {
-                                            b {
-                                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-                                            }
-                                        }
-
-                                        .socialactivities {
-                                            padding: 0;
-
-                                            li {
-                                                display: inline;
-
-                                                .review {
-                                                    background: linear-gradient(to right, #fbbd61, #ec7532);
-                                                    border: none;
-                                                    height: 20px;
-                                                    border-radius: 5px;
-
-                                                    i {
-                                                        color: white !important;
-                                                    }
-
-                                                    small {
-                                                        font-size: 15px;
-                                                        color: white;
-                                                    }
-                                                }
-
-                                                a {
-                                                    text-decoration: none;
-                                                    color: #111;
-
-                                                    i {
-                                                        color: $page-color;
-                                                    }
-
-                                                    span {
-                                                        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
-
-.subscriber {
-    padding: 250px 0;
-    background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
-    position: relative;
-
-    .container {
-        position: absolute;
-        top: 35%;
-
-        .row {
-            div {
-                div {
-                    h4 {
-                        font-size: 17px;
-                        color: #fe9052;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        letter-spacing: 2px;
-                    }
-
-                    h3 {
-                        color: #fff;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        font-size: 40px;
-                        font-weight: 500;
-                        text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
-                        text-transform: capitalize;
-                        letter-spacing: 1px;
-                    }
-
-                    i {
-                        color: white;
-                    }
-
-                    form {
-                        input {
-                            width: 45%;
-                            height: 40px;
-                            border-top-left-radius: 20px;
-                            border-bottom-left-radius: 20px;
-                            outline: none;
-                        }
-
-                        button {
-                            border: none;
-                            background: linear-gradient(to right, #fbbd61, #ec7532) !important;
-                            border-top-right-radius: 20px;
-                            border-bottom-right-radius: 20px;
-                            height: 40px;
-                            margin: 4px;
-                            margin-left: -4px;
-                            outline: none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.latestnews {
-    padding: 70px 0;
-
-    .titlecontainer {
-        .row {
-            div {
-                p {
-                    font-family: 'Orbitron', sans-serif;
-                    font-weight: 500;
-                    color: #111;
-                    font-size: 30px;
-
-                    strong {
-                        font-family: monospace
-                    }
-                }
-
-                p::before {
-                    left: 2px;
-                    position: absolute;
-                    bottom: 26px;
-                    height: 30px;
-                    width: 4px;
-                    background: #111;
-                    content: "";
-                }
-
-                p::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 26px;
-                    left: 8px;
-                    height: 20px;
-                    width: 4px;
-                    background: #ec7532;
-                }
             }
         }
     }
 
-    .container {
-        .row {
-            div {
-                .card {
+    @media screen and (min-width:992px) {
+        .moviedetails {
+            padding: 70px 0;
+
+            .container {
+                .row {
                     div {
-                        overflow: hidden;
-
-                        img {
-                            transition: transform 0.5s linear;
-                        }
-
-                        .sideimg {
-                            max-height: 250px;
-                        }
-
-                        .newsdate {
-                            position: absolute;
-                            right: 25px;
-                            bottom: 25px;
-                            background: #111 none repeat scroll 0 0;
-                            width: auto;
-                            padding: 15px 20px;
-                            color: $page-color;
-                            font-weight: 600;
-                            text-align: center;
-                            transition: all 0.3s ease 0s;
-                            display: flex;
-                            flex-direction: column;
-
-                            .date {
-                                font-size: 30px;
-                                color: white;
-                            }
-
-                            .month {
-                                color: $page-color;
-                            }
-                        }
-                    }
-
-                    .card-body {
-                        h3 {
-                            a {
-                                text-decoration: none;
-                                outline: none;
-                                color: black;
-                            }
-                        }
-
-                        .post-tags {
-                            span {
-                                a {
-                                    color: black;
-                                    text-decoration: none;
-                                    outline: none;
-
-                                    i {
-                                        color: $page-color
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .newscard {
-                    img {
-                        max-height: 350px;
-                    }
-                }
-
-                .card:hover .newsdate {
-                    background: $page-background;
-                }
-
-                .card:hover .month {
-                    color: white;
-                }
-
-                .card:hover .sideimg {
-                    transform: scale(1.1);
-                    max-height: 250px;
-                }
-
-                .card:hover .newsimg {
-                    transform: scale(1.1);
-                    max-height: 350px;
-                }
-            }
-        }
-    }
-}
-
-footer {
-    background: #101010 none repeat scroll 0 0;
-
-    .mainpart {
-        padding: 70px 0;
-
-        .container {
-            .row {
-                div {
-                    h5 {
-                        color: $page-color
-                    }
-
-                    a {
-                        color: white;
-                    }
-
-                    ul {
-                        li {
-                            p {
-                                color: white;
-                            }
-
-                            address {
-                                color: white;
-                            }
-                        }
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
 
                         ul {
                             li {
-                                display: inline;
-                                color: white;
+                                list-style: none;
+                                margin-bottom: 3px;
 
-                                a {
-                                    i {
-                                        font-size: 21px;
-                                    }
+                                span {
+                                    width: 10%;
                                 }
                             }
                         }
@@ -1037,722 +1918,3 @@ footer {
             }
         }
     }
-
-    .footer-copyright {
-        border-top: 1px solid rgba(255, 255, 255, .1);
-    }
-}
-
-@media screen and (max-width: 780px) {
-    .todaysmovie::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #111 none repeat scroll 0 0;
-        opacity: 0.5;
-    }
-
-    .todaysmovie::after {
-        position: absolute;
-        left: 0;
-        content: "";
-        width: 100%;
-        top: 0;
-        height: 100%;
-        background: url(../img/walfstreet.jpg);
-        z-index: -1;
-    }
-}
-
-@media screen and (max-width:375px) {
-    .slider {
-        div {
-            a {
-                display: none;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:656px) {
-    .carousel-caption {
-        h2 {
-            color: #fff;
-            font-family: 'Orbitron', sans-serif;
-            font-size: 20px !important;
-            font-weight: 600;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-            text-transform: capitalize;
-            letter-spacing: 0px !important;
-            line-height: 16px !important;
-        }
-    }
-
-    .plantext {
-        font-size: 13px !important;
-    }
-}
-
-.breadarea {
-    background: url(../img/strangerthings.jpg) no-repeat scroll 0 0/cover;
-    padding: 70px 0;
-
-    .container {
-        .row {
-            div {
-                h2 {
-                    color: #fff;
-                    text-transform: capitalize;
-                    font-family: 'Roboto Condensed', sans-serif;
-                    letter-spacing: 2px;
-                    font-size: 38px;
-                    font-weight: 400;
-                }
-
-                nav {
-                    ol {
-                        background: none;
-
-                        li {
-                            a {
-                                color: white;
-                                text-decoration: none;
-                            }
-
-                            a:hover {
-                                color: $page-color;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 162px) {
-    .mailadr {
-        font-size: 9px;
-    }
-
-    .community li {
-        font-size: 10px;
-    }
-
-    .account h5 {
-        font-size: 14px;
-    }
-
-    .aus {
-        font-size: 25px !important;
-    }
-
-    .features {
-        font-size: 19px;
-    }
-
-    .journey {
-        font-size: 18px !important;
-    }
-}
-
-.carouselarea {
-    background: #ebebeb none repeat scroll 0 0;
-    padding: 40px 0;
-
-    .container {
-        .cfirstrow {
-            div {
-                #carouselExampleControls {
-                    div {}
-
-                    a {
-                        span {
-                            background: orange;
-                            border-radius: 50%;
-                            width: 40px;
-                            height: 40px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        }
-                    }
-                }
-            }
-        }
-
-        .row {
-            div {
-                div {
-                    h3 {
-                        font-size: 35px;
-                        color: #101010;
-                        line-height: 30px;
-                        position: relative;
-                        font-weight: 500;
-                        margin-bottom: 30px;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        letter-spacing: 1px;
-                    }
-
-                    h3::after {
-                        content: "";
-                        background: linear-gradient(to right, #fbbd61, #ec7532);
-                        height: 5px;
-                        position: absolute;
-                        width: 11%;
-                        bottom: -26%;
-                        left: 44%;
-                        border-radius: 8px;
-                    }
-
-                    p {}
-                }
-            }
-        }
-    }
-}
-
-.filmojafeatures {
-    padding: 70px 0;
-
-    .container {
-        .row {
-            div {
-                h2 {
-                    font-family: 'Courier New', Courier, monospace;
-                    margin: auto;
-
-                    span {
-                        color: $page-color;
-                    }
-                }
-
-                h2::before {
-                    left: 0;
-                    position: absolute;
-                    bottom: 0;
-                    height: 30px;
-                    width: 4px;
-                    background: #111;
-                    content: "";
-                }
-
-                h2::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 6px;
-                    height: 20px;
-                    width: 4px;
-                    background: #ec7532;
-                }
-            }
-        }
-
-        .row {
-            div {
-                .card-group {
-                    .card {
-                        border: none;
-
-                        .card-body {
-                            p {
-                                i {
-                                    font-size: 35px;
-                                    color: #B3BAC5;
-                                }
-                            }
-
-                            p {
-                                h3 {}
-
-                                h3:hover {
-                                    color: $page-color;
-                                }
-                            }
-                        }
-                    }
-
-                    .cline::before {
-                        position: absolute;
-                        content: "";
-                        background: #e5e5e5;
-                        width: 2px;
-                        height: 70%;
-                        right: 0;
-                        top: 19%;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-.blogs {
-    padding: 57px 0;
-
-    .container {
-
-        .owl-nav,
-        .owl-dots {
-            display: none;
-        }
-
-        .row {
-            div {
-                .card {
-                    overflow: hidden;
-                    border: none;
-                    padding: 13px 0;
-                    border-bottom: 1px solid #ededed;
-                    border-radius: 0;
-
-                    div {
-                        img {
-                            transition: transform 0.5s linear;
-                            height: auto;
-                            max-height: 475px;
-                        }
-
-                        .newsdate {
-                            position: absolute;
-                            right: 25px;
-                            bottom: 25px;
-                            background: #111 none repeat scroll 0 0;
-                            width: auto;
-                            padding: 15px 20px;
-                            color: $page-color;
-                            font-weight: 600;
-                            text-align: center;
-                            transition: all 0.3s ease 0s;
-                            display: flex;
-                            flex-direction: column;
-
-                            .date {
-                                font-size: 30px;
-                                color: white;
-                            }
-
-                            .month {
-                                color: $page-color;
-                            }
-                        }
-                    }
-
-                    .card-body {
-                        h3 {
-                            a {
-                                text-decoration: none;
-                                outline: none;
-                                color: black;
-                            }
-                        }
-
-                        .post-tags {
-                            span {
-                                a {
-                                    color: black;
-                                    text-decoration: none;
-                                    outline: none;
-
-                                    i {
-                                        color: $page-color
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-                .commentcard {
-                    margin-bottom: 10px;
-                    padding: 0 30px 20px;
-                }
-
-                h4 {
-                    margin-top: 10%;
-                    font-family: cursive;
-                }
-
-                form {
-                    textarea {
-                        width: 90%;
-                        height: 120px;
-                        outline: none;
-                    }
-                }
-
-                .card:hover img {
-                    transform: scale(1.1);
-                }
-
-                .card:hover .newsdate {
-                    background: $page-background !important;
-                }
-
-                .card:hover .month {
-                    color: white;
-                }
-            }
-
-            div {
-                div {
-                    h3 {}
-
-                    input {}
-                }
-
-                .posts {
-                    padding: 20px;
-                    margin-bottom: 25px;
-
-                    img {
-                        transform: none !important;
-                    }
-
-                    h3 {
-                        font-size: 21px;
-                        color: #101010;
-                        line-height: 30px;
-                        position: relative;
-                        font-weight: 500;
-                        margin-bottom: 10px;
-                        font-family: 'Roboto Condensed', sans-serif;
-                        letter-spacing: 1px;
-                    }
-
-                    h3::after {
-                        content: "";
-                        position: absolute;
-                        height: 4px;
-                        width: 31%;
-                        background: linear-gradient(to right, #fbbd61, #ec7532);
-                        top: 90%;
-                        left: 0%;
-                        border-radius: 12px;
-                    }
-
-                    .tags {
-                        li {
-                            display: inline-block;
-                            margin: 2px 0;
-
-                            a {
-                                display: block;
-                                color: #333;
-                                padding: 5px 10px;
-                                border: 1px solid #ededed;
-                                border-radius: 3px;
-                                -webkit-transition: all 0s ease 0s;
-                                transition: all 0s ease 0s;
-                            }
-
-                            a:hover {
-                                background: linear-gradient(to right, #fbbd61, #ec7532);
-                                color: white;
-                                outline: none;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-
-                    .category {
-                        li {
-                            display: block;
-                            border-bottom: 1px solid #ededed;
-
-                            a {
-                                display: block;
-                                color: #333;
-                                padding: 5px 0px;
-                            }
-
-                            a:hover {
-                                color: #ec7532;
-                                text-decoration: none;
-                                outline: none;
-                            }
-                        }
-                    }
-                }
-            }
-
-        }
-    }
-}
-
-.movielist {
-    padding: 70px 0;
-
-    .owl-dots,
-    .owl-nav {
-        display: none;
-    }
-
-    .container {
-        .row {
-            div {
-                .posts {
-                    padding: 20px;
-                    margin-bottom: 25px;
-
-                    h3 {
-
-                        position: relative;
-                    }
-
-                    h3::after {
-                        content: "";
-                        position: absolute;
-                        height: 4px;
-                        width: 31%;
-                        background: linear-gradient(to right, #fbbd61, #ec7532);
-                        top: 97%;
-                        left: 0%;
-                        border-radius: 12px;
-                    }
-                }
-            }
-
-            div {
-                .movieheader {
-                    padding: 13px 8px;
-
-                    p {
-                        strong {}
-                    }
-                }
-
-                .row {
-                    padding: 20px 0;
-
-                    div {
-                        .card {
-                            a {
-                                img {
-                                    max-height: 260px;
-                                    height: auto;
-                                }
-                            }
-
-                            .card-body {
-                                h5 {}
-
-                                p {}
-
-                                .rates {
-                                    a {
-                                        background: $page-background;
-                                        color: white;
-                                        padding: 1px 10px;
-                                        max-height: 26px;
-                                        height: auto;
-                                        border-radius: 5px;
-
-                                        i {}
-
-                                        span {}
-                                    }
-
-                                    p {
-                                        border: 1px solid grey;
-                                        border-radius: 5px;
-                                    }
-                                }
-
-                                .activity {
-                                    a {
-                                        color: black;
-                                        text-decoration: none;
-                                        min-width: 65px;
-
-                                        i {
-                                            color: $page-color;
-                                        }
-
-                                        span {}
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:1200px) {
-    .rates a {
-        display: flex;
-        justify-content: space-between;
-        padding: 1px 6px;
-    }
-}
-
-@media screen and (max-width:212px) {
-    .wtchCar {
-        padding: 3px;
-    }
-
-    select {
-        max-width: 6px;
-    }
-
-    #datepicker {
-        max-width: 60px;
-    }
-
-    .activity a {
-        min-width: 30px;
-    }
-
-    .aus {
-        font-size: 25px !important;
-    }
-}
-
-.plan {
-    padding: 70px 0;
-
-    .container {
-        .pfirstrow {
-            div {
-                div {
-                    h3 {
-                        line-height: 42px;
-                        letter-spacing: 3px;
-                        font-size: 28px;
-                        padding: 12px;
-                    }
-                }
-            }
-        }
-
-        .row {
-            .pln {
-                .card {
-                    .card-header {
-                        padding: 50px 0;
-                    }
-
-                    .premium,
-                    .premiumbtn {
-                        background: $page-background;
-                    }
-
-                    .premiumbtn {
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-.registerarea {
-    padding: 70px 0;
-
-    .container {
-        .row {
-            .login {
-                background: #ec7532;
-                color: white;
-            }
-
-            div {
-
-                .card {
-                    padding: 20px;
-                }
-            }
-        }
-    }
-}
-
-.series {
-    padding: 70px 0;
-
-    .container {
-        .row {
-            .movieheader {
-                padding: 25px 0;
-
-                div {
-                    padding: 12px 0;
-
-                    p {
-                        margin: auto 0;
-                    }
-
-                    select {}
-                }
-            }
-
-            .col-md-3 {
-                padding: 12px 5px;
-
-                .card {
-                    border: none;
-                    figure {
-                        img {
-                            min-height: 320px;
-                        }
-                    }
-
-                    .container {
-                        h4 {
-                            b {
-                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-                            }
-                        }
-
-                        .socialactivities {
-                            padding: 0;
-
-                            li {
-                                display: inline;
-
-                                .review {
-                                    background: linear-gradient(to right, #fbbd61, #ec7532);
-                                    border: none;
-                                    height: 20px;
-                                    border-radius: 5px;
-
-                                    i {
-                                        color: white !important;
-                                    }
-
-                                    small {
-                                        font-size: 15px;
-                                        color: white;
-                                    }
-                                }
-
-                                a {
-                                    text-decoration: none;
-                                    color: #111;
-
-                                    i {
-                                        color: $page-color;
-                                    }
-
-                                    span {
-                                        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
