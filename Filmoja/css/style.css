@@ -1407,4 +1407,74 @@ footer .footer-copyright {
 .registerarea .container .row div .card {
   padding: 20px;
 }
+
+.series {
+  padding: 70px 0;
+}
+
+.series .container .row .movieheader {
+  padding: 25px 0;
+}
+
+.series .container .row .movieheader div {
+  padding: 12px 0;
+}
+
+.series .container .row .movieheader div p {
+  margin: auto 0;
+}
+
+.series .container .row .col-md-3 {
+  padding: 12px 5px;
+}
+
+.series .container .row .col-md-3 .card {
+  border: none;
+}
+
+.series .container .row .col-md-3 .card figure img {
+  min-height: 320px;
+}
+
+.series .container .row .col-md-3 .card .container h4 b {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities {
+  padding: 0;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li {
+  display: inline;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li .review {
+  background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background: linear-gradient(to right, #fbbd61, #ec7532);
+  border: none;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li .review i {
+  color: white !important;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li .review small {
+  font-size: 15px;
+  color: white;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li a {
+  text-decoration: none;
+  color: #111;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li a i {
+  color: #ec7532;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li a span {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
 /*# sourceMappingURL=style.css.map */

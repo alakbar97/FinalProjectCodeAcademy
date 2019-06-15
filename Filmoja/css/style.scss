@@ -71,9 +71,11 @@ ul {
 .owl-dots {
     display: none;
 }
-input{
+
+input {
     padding: 12px 20px;
 }
+
 @media screen and (max-width: 767px) {
     .side {
         display: block;
@@ -518,6 +520,7 @@ header {
 
                                 .socialactivities {
                                     padding: 0;
+
                                     li {
                                         display: inline;
 
@@ -749,6 +752,7 @@ header {
 
                                         .socialactivities {
                                             padding: 0;
+
                                             li {
                                                 display: inline;
 
@@ -1008,7 +1012,8 @@ footer {
                             p {
                                 color: white;
                             }
-                            address{
+
+                            address {
                                 color: white;
                             }
                         }
@@ -1605,6 +1610,7 @@ footer {
     .activity a {
         min-width: 30px;
     }
+
     .aus {
         font-size: 25px !important;
     }
@@ -1663,6 +1669,86 @@ footer {
 
                 .card {
                     padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+.series {
+    padding: 70px 0;
+
+    .container {
+        .row {
+            .movieheader {
+                padding: 25px 0;
+
+                div {
+                    padding: 12px 0;
+
+                    p {
+                        margin: auto 0;
+                    }
+
+                    select {}
+                }
+            }
+
+            .col-md-3 {
+                padding: 12px 5px;
+
+                .card {
+                    border: none;
+                    figure {
+                        img {
+                            min-height: 320px;
+                        }
+                    }
+
+                    .container {
+                        h4 {
+                            b {
+                                font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                            }
+                        }
+
+                        .socialactivities {
+                            padding: 0;
+
+                            li {
+                                display: inline;
+
+                                .review {
+                                    background: linear-gradient(to right, #fbbd61, #ec7532);
+                                    border: none;
+                                    height: 20px;
+                                    border-radius: 5px;
+
+                                    i {
+                                        color: white !important;
+                                    }
+
+                                    small {
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+                                }
+
+                                a {
+                                    text-decoration: none;
+                                    color: #111;
+
+                                    i {
+                                        color: $page-color;
+                                    }
+
+                                    span {
+                                        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
