@@ -115,7 +115,7 @@
     </section>
     <section class="moviedetails">
         <div class="container">
-            <div class="row">
+            <div class="row inforow">
                 <div class="col-sm-4 col-md-4"></div>
                 <div class="col-md-8 col-sm-8">
                     <ul>
@@ -128,17 +128,18 @@
             </div>
             <div class="row tabrow">
                 <div class="col-sm-4 col-md-4"></div>
-                <div class="col-md-8 col-sm-8">
+                <div class="col-md-8 col-sm-8 tabdiv">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#home">Story Brief</a>
+                            <a class="nav-link active" data-toggle="tab" href="#menu1">Story Brief</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#menu1">Review</a>
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Review</a>
                         </li>
                     </ul>
+
                     <div class="tab-content">
-                        <div id="home" class="container tab-pane active"><br>
+                        <div id="menu1" class=" tab-pane active"><br>
                             <article>
                                 It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 the industry's standard dummy text ever since the 1500s, when an unknown printer took a
@@ -149,8 +150,59 @@
                                 Aldus PageMaker including versions
                             </article>
                         </div>
-                        <div id="menu1" class="container tab-pane fade"><br>
-
+                        <div id="menu2" class=" tab-pane fade"><br>
+                            <ul>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column reviewhead">
+                                            <span class="reviewtitle">Best Marvel movie in my opinion</span>
+                                            <span class="text-muted">24.08.2018, 17:53 by <strong>John
+                                                    Doe</strong></span>
+                                        </div>
+                                        <div class="review"><span><i class="fa fa-star"></i>4.3</span></div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have suffered alteration in some form, by injected
+                                        humour, or randomised words which don't look even slightly believable. If you
+                                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                        anything embarrassing hidden in the middle of text.</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex flex-column reviewhead">
+                                            <span class="reviewtitle">Best Marvel movie in my opinion</span>
+                                            <span class="text-muted">24.08.2018, 17:53 by <strong>John
+                                                    Doe</strong></span>
+                                        </div>
+                                        <div class="review"><span><i class="fa fa-star"></i>4.3</span></div>
+                                    </div>
+                                    <p>There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have suffered alteration in some form, by injected
+                                        humour, or randomised words which don't look even slightly believable. If you
+                                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                        anything embarrassing hidden in the middle of text.</p>
+                                </li>
+                            </ul>
+                            <form class="d-flex flex-column">
+                                <input type="text" placeholder="Review Title">
+                                <textarea placeholder="Write your opinion..."></textarea>
+                                <p>Rate Now:</p>
+                                <div class="d-flex">
+                                        <fieldset class="rating">
+                                                <input type="radio" id="star5" name="rating" value="5" /><label class="full"
+                                                    for="star5" title="Awesome - 5 stars"></label>
+                                                <input type="radio" id="star4" name="rating" value="4" /><label class="full"
+                                                    for="star4" title="Pretty good - 4 stars"></label>
+                                                <input type="radio" id="star3" name="rating" value="3" /><label class="full"
+                                                    for="star3" title="Meh - 3 stars"></label>
+                                                <input type="radio" id="star2" name="rating" value="2" /><label class="full"
+                                                    for="star2" title="Kinda bad - 2 stars"></label>
+                                                <input type="radio" id="star1" name="rating" value="1" /><label class="full"
+                                                    for="star1" title="Sucks big time - 1 star"></label>
+                                            </fieldset>
+                                </div>
+                               
+                            </form>
                         </div>
                     </div>
                 </div>

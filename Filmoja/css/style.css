@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -1566,12 +1567,12 @@ footer .footer-copyright {
   padding: 70px 0;
 }
 
-.moviedetails .container .row div ul li {
+.moviedetails .container .inforow div ul li {
   list-style: none;
   margin-bottom: 3px;
 }
 
-.moviedetails .container .row div ul li span {
+.moviedetails .container .inforow div ul li span {
   width: 10%;
 }
 
@@ -1579,16 +1580,16 @@ footer .footer-copyright {
   margin-top: 30px;
 }
 
-.moviedetails .container .tabrow ul,
-.moviedetails .container .tabrow ul > li > a {
+.moviedetails .container .tabrow .tabdiv ul,
+.moviedetails .container .tabrow .tabdiv ul > li > a {
   border: none;
 }
 
-.moviedetails .container .tabrow ul {
+.moviedetails .container .tabrow .tabdiv .nav {
   padding-top: 6px;
 }
 
-.moviedetails .container .tabrow ul li a::after {
+.moviedetails .container .tabrow .tabdiv .nav li a::after {
   content: '';
   display: block;
   width: 0;
@@ -1599,24 +1600,108 @@ footer .footer-copyright {
   transition: width .3s;
 }
 
-.moviedetails .container .tabrow ul li a:hover::after {
+.moviedetails .container .tabrow .tabdiv .nav li a:hover::after {
   width: 100%;
 }
 
-.moviedetails .container .tabrow ul li a.active {
+.moviedetails .container .tabrow .tabdiv .nav li a.active {
   color: #ec7532;
 }
 
-.moviedetails .container .tabrow ul li a {
+.moviedetails .container .tabrow .tabdiv .nav li a {
   text-decoration: none;
   color: black;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li {
+  display: block;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li .reviewhead span {
+  padding: 5px 0;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li .reviewhead .reviewtitle {
+  font-size: 16px;
+  color: #333 !important;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li .review span {
+  line-height: 16px;
+  display: inline-block !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  color: #fff !important;
+  text-align: center;
+  border: none;
+  width: auto !important;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li p {
+  color: #777;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form {
+  /* hover previous stars in list */
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form input {
+  padding: 0;
+  width: 51%;
+  margin-bottom: 10px;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form p {
+  margin-top: 15px;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form textarea {
+  width: 51%;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form fieldset {
+  border: none;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form fieldset input {
+  display: none;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form fieldset label:before {
+  margin: 5px;
+  font-size: 2.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "★";
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form fieldset label {
+  color: #ddd;
+  float: right;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > input:checked ~ label,
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating:not(:checked) > label:hover,
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > input:checked + label:hover,
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > input:checked ~ label:hover,
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > label:hover ~ input:checked ~ label,
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
 }
 
 @media screen and (min-width: 992px) {
   .moviedetails {
     padding: 70px 0;
   }
-  .moviedetails .container .row div {
+  .moviedetails .container .inforow div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1628,11 +1713,11 @@ footer .footer-copyright {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .moviedetails .container .row div ul li {
+  .moviedetails .container .inforow div ul li {
     list-style: none;
     margin-bottom: 3px;
   }
-  .moviedetails .container .row div ul li span {
+  .moviedetails .container .inforow div ul li span {
     width: 10%;
   }
 }
