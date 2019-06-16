@@ -1938,9 +1938,11 @@ footer {
                                 width: 51%;
                                 margin-bottom: 10px;
                             }
-                            p{
+
+                            p {
                                 margin-top: 15px;
                             }
+
                             textarea {
                                 width: 51%;
                             }
@@ -2013,6 +2015,97 @@ footer {
                                 width: 10%;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contactpage {
+    padding: 70px 0;
+
+    .container {
+        .row {
+            div {
+                .support {
+                    background: #1E1558 none repeat scroll 0 0;
+                    border-radius: 5px;
+
+                    .supicon {
+                        font-size: 50px;
+                        margin-right: 20px;
+                        color: #fff;
+                        padding: 25px;
+                    }
+
+                    .suptext {
+                        margin-top: 4%;
+
+                        h3 {
+                            font-size: 26px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            margin-bottom: 15px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+
+                .row {
+                    margin-top: 20px;
+
+                    div {
+                        div {
+                            p {
+                                margin: 0;
+                            }
+
+                            h4 {
+                                font-size: 18px;
+                                color: #111;
+                                line-height: normal;
+                                letter-spacing: 1px;
+                            }
+
+                            ul {
+                                li {
+                                    display: inline;
+
+                                    a {
+                                        font-size: 25px;
+                                    }
+
+                                    a:hover {
+                                        color: $page-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div {
+                h3 {}
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px;
+                    border: 1px solid #ddd;
+
+                    input {
+                        padding: 7px 10px;
+                        margin-bottom: 13px;
+                    }
+
+                    textarea {
+                        height: 120px;
+                    }
+                    button{
+                        margin: 0;
+                        margin-top: 8px;
                     }
                 }
             }
