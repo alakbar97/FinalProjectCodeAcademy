@@ -501,6 +501,10 @@ header .container-fluid .scNav .sidediv div div a:hover {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+.topmovies .container .secondrow div div div div div .socialactivities li a:hover span {
+  color: #ec7532;
+}
+
 .todaysmovie {
   position: relative;
   z-index: 1;
@@ -622,11 +626,11 @@ header .container-fluid .scNav .sidediv div div a:hover {
   border: none;
 }
 
-.newitems .container .row div ul {
+.newitems .container .row div .nav {
   padding-top: 6px;
 }
 
-.newitems .container .row div ul li a::after {
+.newitems .container .row div .nav li a::after {
   content: '';
   display: block;
   width: 0;
@@ -637,15 +641,15 @@ header .container-fluid .scNav .sidediv div div a:hover {
   transition: width .3s;
 }
 
-.newitems .container .row div ul li a:hover::after {
+.newitems .container .row div .nav li a:hover::after {
   width: 100%;
 }
 
-.newitems .container .row div ul li a.active {
+.newitems .container .row div .nav li a.active {
   color: #ec7532;
 }
 
-.newitems .container .row div ul li a {
+.newitems .container .row div .nav li a {
   text-decoration: none;
   color: black;
 }
@@ -698,6 +702,10 @@ header .container-fluid .scNav .sidediv div div a:hover {
 
 .newitems .container .row div div .tab-pane .row div .card div .socialactivities li a span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.newitems .container .row div div .tab-pane .row div .card div .socialactivities li a:hover span {
+  color: #ec7532;
 }
 
 .subscriber {
@@ -1103,6 +1111,34 @@ footer .footer-copyright {
   top: 19%;
 }
 
+.ourpartner h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ourpartner h2 span {
+  color: #ec7532;
+}
+
+.ourpartner h2::before {
+  left: 0;
+  position: absolute;
+  bottom: 4px;
+  height: 30px;
+  width: 4px;
+  background: #111;
+  content: "";
+}
+
+.ourpartner h2::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 6px;
+  height: 20px;
+  width: 4px;
+  background: #ec7532;
+}
+
 .blogs {
   padding: 57px 0;
 }
@@ -1346,6 +1382,10 @@ footer .footer-copyright {
   color: #ec7532;
 }
 
+.movielist .container .row div .row div .card .card-body .activity a:hover span {
+  color: #ec7532;
+}
+
 @media screen and (max-width: 1200px) {
   .rates a {
     display: -webkit-box;
@@ -1395,6 +1435,20 @@ footer .footer-copyright {
 .plan .container .row .pln .card .premiumbtn {
   background: -webkit-gradient(linear, left top, right top, from(#fbbd61), to(#ec7532));
   background: linear-gradient(to right, #fbbd61, #ec7532);
+}
+
+.plan .container .row .pln .card .premium::after {
+  content: "Hot";
+  color: #ec7532;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 0;
+  top: 5%;
+  background: white;
+  width: 21%;
+  height: 5%;
+  text-align: center;
 }
 
 .plan .container .row .pln .card .premiumbtn {
@@ -1482,6 +1536,10 @@ footer .footer-copyright {
 
 .series .container .row .col-md-3 .card .container .socialactivities li a span {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.series .container .row .col-md-3 .card .container .socialactivities li a:hover span {
+  color: #ec7532;
 }
 
 .breadarea .container .row img {
@@ -1695,6 +1753,10 @@ footer .footer-copyright {
 .moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > label:hover ~ input:checked ~ label,
 .moviedetails .container .tabrow .tabdiv .tab-content #menu2 form .rating > input:checked ~ label:hover ~ label {
   color: #FFED85;
+}
+
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 form button {
+  margin: auto 0;
 }
 
 @media screen and (min-width: 992px) {

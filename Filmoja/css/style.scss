@@ -530,7 +530,7 @@ header {
                                         display: inline;
 
                                         .review {
-                                            background: linear-gradient(to right, #fbbd61, #ec7532);
+                                            background:$page-background;
                                             border: none;
                                             height: 20px;
                                             border-radius: 5px;
@@ -556,6 +556,9 @@ header {
                                             span {
                                                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                             }
+                                        }
+                                        a:hover span{
+                                            color: $page-color;
                                         }
                                     }
                                 }
@@ -705,7 +708,7 @@ header {
                     border: none;
                 }
 
-                ul {
+                .nav {
                     padding-top: 6px;
 
                     li a::after {
@@ -788,6 +791,9 @@ header {
                                                     span {
                                                         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                                     }
+                                                }
+                                                a:hover span{
+                                                    color: $page-color;
                                                 }
                                             }
                                         }
@@ -1295,6 +1301,33 @@ footer {
     }
 
 }
+.ourpartner{
+    h2{
+        font-family: 'Courier New', Courier, monospace;
+        span{
+            color: $page-color;
+        }
+    }
+    h2::before {
+        left: 0;
+        position: absolute;
+        bottom: 4px;
+        height: 30px;
+        width: 4px;
+        background: #111;
+        content: "";
+    }
+
+    h2::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        left: 6px;
+        height: 20px;
+        width: 4px;
+        background: #ec7532;
+    }
+}
 
 .blogs {
     padding: 57px 0;
@@ -1581,6 +1614,9 @@ footer {
 
                                         span {}
                                     }
+                                    a:hover span{
+                                        color: $page-color;
+                                    }
                                 }
                             }
                         }
@@ -1648,6 +1684,18 @@ footer {
                     .premium,
                     .premiumbtn {
                         background: $page-background;
+                    }
+                    .premium::after{
+                        content: "Hot";
+                        color: $page-color;
+                        position: absolute;
+                        transform: rotate(45deg);
+                        right: 0;
+                        top: 5%;
+                        background: white;
+                        width: 21%;
+                        height: 5%;
+                        text-align: center;
                     }
 
                     .premiumbtn {
@@ -1751,6 +1799,9 @@ footer {
                                     span {
                                         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                     }
+                                }
+                                a:hover span{
+                                    color: $page-color;
                                 }
                             }
                         }
@@ -1985,6 +2036,9 @@ footer {
                             /* lighten current selection */
                             .rating>input:checked~label:hover~label {
                                 color: #FFED85;
+                            }
+                            button{
+                                margin: auto 0;
                             }
                         }
                     }
