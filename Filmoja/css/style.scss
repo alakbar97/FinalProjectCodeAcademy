@@ -442,9 +442,16 @@ header {
         position: absolute;
         right: 0;
         font-size: 60px;
-        top: -40%;
+        top: -30%;
     }
-
+    @media screen and (min-width: 319px) and (max-width:375px){
+        .owl-nav{
+            position: absolute;
+            right: 0;
+            font-size: 60px;
+            top:-40% !important;
+        }
+    }
     .owl-nav button {
         outline: none;
     }
@@ -530,7 +537,7 @@ header {
                                         display: inline;
 
                                         .review {
-                                            background:$page-background;
+                                            background: $page-background;
                                             border: none;
                                             height: 20px;
                                             border-radius: 5px;
@@ -557,7 +564,8 @@ header {
                                                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                             }
                                         }
-                                        a:hover span{
+
+                                        a:hover span {
                                             color: $page-color;
                                         }
                                     }
@@ -792,7 +800,8 @@ header {
                                                         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                                     }
                                                 }
-                                                a:hover span{
+
+                                                a:hover span {
                                                     color: $page-color;
                                                 }
                                             }
@@ -1301,13 +1310,16 @@ footer {
     }
 
 }
-.ourpartner{
-    h2{
+
+.ourpartner {
+    h2 {
         font-family: 'Courier New', Courier, monospace;
-        span{
+
+        span {
             color: $page-color;
         }
     }
+
     h2::before {
         left: 0;
         position: absolute;
@@ -1342,13 +1354,14 @@ footer {
         .row {
             div {
                 .card {
-                    overflow: hidden;
                     border: none;
                     padding: 13px 0;
                     border-bottom: 1px solid #ededed;
                     border-radius: 0;
 
                     div {
+                        overflow: hidden;
+
                         img {
                             transition: transform 0.5s linear;
                             height: auto;
@@ -1397,10 +1410,15 @@ footer {
                                     outline: none;
 
                                     i {
+                                        padding: 4px;
                                         color: $page-color
                                     }
                                 }
                             }
+                        }
+
+                        .post-content {
+                            padding: 11px 0;
                         }
 
                     }
@@ -1548,7 +1566,7 @@ footer {
                         position: absolute;
                         height: 4px;
                         width: 31%;
-                        background: linear-gradient(to right, #fbbd61, #ec7532);
+                        background: $page-background;
                         top: 97%;
                         left: 0%;
                         border-radius: 12px;
@@ -1590,7 +1608,7 @@ footer {
                                         max-height: 26px;
                                         height: auto;
                                         border-radius: 5px;
-
+                                        border: none;
                                         i {}
 
                                         span {}
@@ -1614,7 +1632,8 @@ footer {
 
                                         span {}
                                     }
-                                    a:hover span{
+
+                                    a:hover span {
                                         color: $page-color;
                                     }
                                 }
@@ -1685,7 +1704,8 @@ footer {
                     .premiumbtn {
                         background: $page-background;
                     }
-                    .premium::after{
+
+                    .premium::after {
                         content: "Hot";
                         color: $page-color;
                         position: absolute;
@@ -1800,7 +1820,8 @@ footer {
                                         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
                                     }
                                 }
-                                a:hover span{
+
+                                a:hover span {
                                     color: $page-color;
                                 }
                             }
@@ -2037,7 +2058,8 @@ footer {
                             .rating>input:checked~label:hover~label {
                                 color: #FFED85;
                             }
-                            button{
+
+                            button {
                                 margin: auto 0;
                             }
                         }
@@ -2157,7 +2179,8 @@ footer {
                     textarea {
                         height: 120px;
                     }
-                    button{
+
+                    button {
                         margin: 0;
                         margin-top: 8px;
                     }

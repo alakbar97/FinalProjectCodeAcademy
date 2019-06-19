@@ -399,7 +399,16 @@ header .container-fluid .scNav .sidediv div div a:hover {
   position: absolute;
   right: 0;
   font-size: 60px;
-  top: -40%;
+  top: -30%;
+}
+
+@media screen and (min-width: 319px) and (max-width: 375px) {
+  .topmovies .owl-nav {
+    position: absolute;
+    right: 0;
+    font-size: 60px;
+    top: -40% !important;
+  }
 }
 
 .topmovies .owl-nav button {
@@ -1149,11 +1158,14 @@ footer .footer-copyright {
 }
 
 .blogs .container .row div .card {
-  overflow: hidden;
   border: none;
   padding: 13px 0;
   border-bottom: 1px solid #ededed;
   border-radius: 0;
+}
+
+.blogs .container .row div .card div {
+  overflow: hidden;
 }
 
 .blogs .container .row div .card div img {
@@ -1208,7 +1220,12 @@ footer .footer-copyright {
 }
 
 .blogs .container .row div .card .card-body .post-tags span a i {
+  padding: 4px;
   color: #ec7532;
+}
+
+.blogs .container .row div .card .card-body .post-content {
+  padding: 11px 0;
 }
 
 .blogs .container .row div .commentcard {
@@ -1365,6 +1382,7 @@ footer .footer-copyright {
   max-height: 26px;
   height: auto;
   border-radius: 5px;
+  border: none;
 }
 
 .movielist .container .row div .row div .card .card-body .rates p {

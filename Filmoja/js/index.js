@@ -19,7 +19,7 @@ $("#exampleModal").on('hidden.bs.modal', function (e) {
 });
 
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "auto";
+    document.getElementById("mySidepanel").style.width = "100%";
   }
   
   function closeNav() {
