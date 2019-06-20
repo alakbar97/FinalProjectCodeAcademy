@@ -132,11 +132,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
-$('#datepicker').datepicker({
-  maxViewMode: 1,
-  clearBtn: true,
-  autoclose: true,
-  todayHighlight: true,
-  todayBtn: "linked",
-  toggleActive: true
-});

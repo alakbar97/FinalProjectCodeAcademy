@@ -1120,6 +1120,10 @@ footer .footer-copyright {
   top: 19%;
 }
 
+.ourpartner {
+  padding: 30px 0;
+}
+
 .ourpartner h2 {
   font-family: 'Courier New', Courier, monospace;
 }
