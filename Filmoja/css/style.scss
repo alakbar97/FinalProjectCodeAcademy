@@ -444,14 +444,16 @@ header {
         font-size: 60px;
         top: -30%;
     }
-    @media screen and (min-width: 319px) and (max-width:375px){
-        .owl-nav{
+
+    @media screen and (min-width: 319px) and (max-width:375px) {
+        .owl-nav {
             position: absolute;
             right: 0;
             font-size: 60px;
-            top:-40% !important;
+            top: -40% !important;
         }
     }
+
     .owl-nav button {
         outline: none;
     }
@@ -1237,6 +1239,10 @@ footer {
 .filmojafeatures {
     padding: 70px 0;
 
+    .owl-nav {
+        display: none !important;
+    }
+
     .container {
         .row {
             div {
@@ -1312,6 +1318,11 @@ footer {
 
 .ourpartner {
     padding: 30px 0;
+
+    .owl-nav {
+        display: none !important;
+    }
+
     h2 {
         font-family: 'Courier New', Courier, monospace;
 
@@ -1427,6 +1438,16 @@ footer {
                 .commentcard {
                     margin-bottom: 10px;
                     padding: 0 30px 20px;
+
+                    .card-body {
+                        img {
+                            float: left;
+                            width: 80px;
+                            height: 80px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                    }
                 }
 
                 h4 {
@@ -1609,6 +1630,7 @@ footer {
                                         height: auto;
                                         border-radius: 5px;
                                         border: none;
+
                                         i {}
 
                                         span {}
@@ -1696,6 +1718,8 @@ footer {
         .row {
             .pln {
                 .card {
+                    overflow: hidden;
+
                     .card-header {
                         padding: 50px 0;
                     }
@@ -1707,19 +1731,22 @@ footer {
 
                     .premium::after {
                         content: "Hot";
+                        text-align: center;
                         color: $page-color;
                         position: absolute;
+                        display: block;
+                        padding: 5px;
+                        width: 54%;
+                        text-transform: capitalize;
+                        background: #fff;
+                        right: -15%;
+                        top: 10px;
                         transform: rotate(45deg);
-                        right: 0;
-                        top: 5%;
-                        background: white;
-                        width: 21%;
-                        height: 5%;
-                        text-align: center;
                     }
 
                     .premiumbtn {
                         color: white;
+                        border: none;
                     }
                 }
             }
@@ -1982,6 +2009,12 @@ footer {
                                         line-height: 20px;
                                         font-weight: 400;
                                     }
+                                    img{
+                                        height: 40px;
+                                        width: 40px;
+                                        float: left;
+                                        border-radius: 50%;
+                                    }
                                 }
 
                                 .review {
@@ -2095,6 +2128,12 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contactpage .container .row div .row div div {
+        text-align: center !important;
     }
 }
 

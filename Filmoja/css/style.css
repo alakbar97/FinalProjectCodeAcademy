@@ -1068,6 +1068,10 @@ footer .footer-copyright {
   padding: 70px 0;
 }
 
+.filmojafeatures .owl-nav {
+  display: none !important;
+}
+
 .filmojafeatures .container .row div h2 {
   font-family: 'Courier New', Courier, monospace;
   margin: auto;
@@ -1122,6 +1126,10 @@ footer .footer-copyright {
 
 .ourpartner {
   padding: 30px 0;
+}
+
+.ourpartner .owl-nav {
+  display: none !important;
 }
 
 .ourpartner h2 {
@@ -1235,6 +1243,14 @@ footer .footer-copyright {
 .blogs .container .row div .commentcard {
   margin-bottom: 10px;
   padding: 0 30px 20px;
+}
+
+.blogs .container .row div .commentcard .card-body img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .blogs .container .row div h4 {
@@ -1449,6 +1465,10 @@ footer .footer-copyright {
   padding: 12px;
 }
 
+.plan .container .row .pln .card {
+  overflow: hidden;
+}
+
 .plan .container .row .pln .card .card-header {
   padding: 50px 0;
 }
@@ -1461,20 +1481,23 @@ footer .footer-copyright {
 
 .plan .container .row .pln .card .premium::after {
   content: "Hot";
+  text-align: center;
   color: #ec7532;
   position: absolute;
+  display: block;
+  padding: 5px;
+  width: 54%;
+  text-transform: capitalize;
+  background: #fff;
+  right: -15%;
+  top: 10px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  right: 0;
-  top: 5%;
-  background: white;
-  width: 21%;
-  height: 5%;
-  text-align: center;
 }
 
 .plan .container .row .pln .card .premiumbtn {
   color: white;
+  border: none;
 }
 
 .registerarea {
@@ -1708,6 +1731,13 @@ footer .footer-copyright {
   font-weight: 400;
 }
 
+.moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li .reviewhead img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  border-radius: 50%;
+}
+
 .moviedetails .container .tabrow .tabdiv .tab-content #menu2 ul li .review span {
   line-height: 16px;
   display: inline-block !important;
@@ -1803,6 +1833,12 @@ footer .footer-copyright {
   }
   .moviedetails .container .inforow div ul li span {
     width: 10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactpage .container .row div .row div div {
+    text-align: center !important;
   }
 }
 
