@@ -20,13 +20,13 @@ $("#exampleModal").on('hidden.bs.modal', function (e) {
 
 function openNav() {
     document.getElementById("mySidepanel").style.width = "100%";
-  }
+  };
   
   function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
-  }
+  };
 
-$('.owl-carousel').owlCarousel({
+$('.topmovies .owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
@@ -41,8 +41,83 @@ $('.owl-carousel').owlCarousel({
             items: 5
         }
     }
-})
-
+});
+$('.filmojafeatures .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:2000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+});
+$('.ourpartner .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  autoplay:true,
+  autoplayTimeout:2000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+});
+$('.blogs .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10, 
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+});
+$('.movielist .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10, 
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverPause:true,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+});
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -51,9 +126,17 @@ function scrollFunction() {
   } else {
     document.getElementById("myBtn").style.display = "none";
   }
-}
+};
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+};
+$('#datepicker').datepicker({
+  maxViewMode: 1,
+  clearBtn: true,
+  autoclose: true,
+  todayHighlight: true,
+  todayBtn: "linked",
+  toggleActive: true
+});
