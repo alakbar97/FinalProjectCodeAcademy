@@ -107,7 +107,7 @@ input {
     padding-top: 60px;
   }
   .sidepanel a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 11px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -321,7 +321,7 @@ header .container-fluid .scNav .sidediv div div .closebtn {
 }
 
 header .container-fluid .scNav .sidediv div div a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 11px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
