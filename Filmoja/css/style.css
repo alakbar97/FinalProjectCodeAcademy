@@ -90,7 +90,7 @@ input {
     margin: 0;
     display: block !important;
   }
-  .arrow {
+  .arrow img {
     display: none;
   }
   .sidepanel {
@@ -951,7 +951,7 @@ footer .footer-copyright {
 }
 
 @media screen and (max-width: 375px) {
-  .slider div a {
+  .slider div a img {
     display: none;
   }
 }
@@ -1082,7 +1082,7 @@ footer .footer-copyright {
 }
 
 .filmojafeatures .container .row div h2::before {
-  left: 0;
+  left: 2px;
   position: absolute;
   bottom: 0;
   height: 30px;
@@ -1095,7 +1095,7 @@ footer .footer-copyright {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 6px;
+  left: 8px;
   height: 20px;
   width: 4px;
   background: #ec7532;
@@ -1141,7 +1141,7 @@ footer .footer-copyright {
 }
 
 .ourpartner h2::before {
-  left: 0;
+  left: 2px;
   position: absolute;
   bottom: 4px;
   height: 30px;
@@ -1154,7 +1154,7 @@ footer .footer-copyright {
   content: "";
   position: absolute;
   bottom: 4px;
-  left: 6px;
+  left: 8px;
   height: 20px;
   width: 4px;
   background: #ec7532;

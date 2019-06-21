@@ -93,7 +93,9 @@ input {
     }
 
     .arrow {
-        display: none;
+        img{
+            display: none;
+        }
     }
 
     .sidepanel {
@@ -318,7 +320,6 @@ header {
 
             .sidediv {
                 div {
-
                     button {
                         font-size: 20px;
                         cursor: pointer;
@@ -358,8 +359,6 @@ header {
                         a:hover {
                             color: #f1f1f1;
                         }
-
-                        form {}
                     }
                 }
             }
@@ -408,8 +407,6 @@ header {
                 }
             }
         }
-
-        a {}
     }
 
     @media screen and (min-width: 970px) {
@@ -748,8 +745,6 @@ header {
 
                 div {
                     .tab-pane {
-                        .container {}
-
                         .row {
                             div {
                                 .card {
@@ -1091,7 +1086,9 @@ footer {
     .slider {
         div {
             a {
-                display: none;
+                img{
+                    display: none;
+                }
             }
         }
     }
@@ -1187,8 +1184,6 @@ footer {
         .cfirstrow {
             div {
                 #carouselExampleControls {
-                    div {}
-
                     a {
                         span {
                             background: orange;
@@ -1228,8 +1223,6 @@ footer {
                         left: 44%;
                         border-radius: 8px;
                     }
-
-                    p {}
                 }
             }
         }
@@ -1256,7 +1249,7 @@ footer {
                 }
 
                 h2::before {
-                    left: 0;
+                    left: 2px;
                     position: absolute;
                     bottom: 0;
                     height: 30px;
@@ -1269,7 +1262,7 @@ footer {
                     content: "";
                     position: absolute;
                     bottom: 0;
-                    left: 6px;
+                    left: 8px;
                     height: 20px;
                     width: 4px;
                     background: #ec7532;
@@ -1292,8 +1285,6 @@ footer {
                             }
 
                             p {
-                                h3 {}
-
                                 h3:hover {
                                     color: $page-color;
                                 }
@@ -1332,7 +1323,7 @@ footer {
     }
 
     h2::before {
-        left: 0;
+        left: 2px;
         position: absolute;
         bottom: 4px;
         height: 30px;
@@ -1345,7 +1336,7 @@ footer {
         content: "";
         position: absolute;
         bottom: 4px;
-        left: 6px;
+        left: 8px;
         height: 20px;
         width: 4px;
         background: #ec7532;
@@ -1477,12 +1468,6 @@ footer {
             }
 
             div {
-                div {
-                    h3 {}
-
-                    input {}
-                }
-
                 .posts {
                     padding: 20px;
                     margin-bottom: 25px;
@@ -1598,10 +1583,6 @@ footer {
             div {
                 .movieheader {
                     padding: 13px 8px;
-
-                    p {
-                        strong {}
-                    }
                 }
 
                 .row {
@@ -1617,9 +1598,6 @@ footer {
                             }
 
                             .card-body {
-                                h5 {}
-
-                                p {}
 
                                 .rates {
                                     a {
@@ -1630,10 +1608,6 @@ footer {
                                         height: auto;
                                         border-radius: 5px;
                                         border: none;
-
-                                        i {}
-
-                                        span {}
                                     }
 
                                     p {
@@ -1651,8 +1625,6 @@ footer {
                                         i {
                                             color: $page-color;
                                         }
-
-                                        span {}
                                     }
 
                                     a:hover span {
@@ -1789,8 +1761,6 @@ footer {
                     p {
                         margin: auto 0;
                     }
-
-                    select {}
                 }
             }
 
@@ -2202,8 +2172,6 @@ footer {
             }
 
             div {
-                h3 {}
-
                 form {
                     display: flex;
                     flex-direction: column;
